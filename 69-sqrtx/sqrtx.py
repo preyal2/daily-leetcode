@@ -1,10 +1,10 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
-        l, r = 0, x
-        while l < r:
-            mid = (l + r + 1) >> 1
-            if mid > x // mid:
-                r = mid - 1
-            else:
-                l = mid
-        return l
+        if x < 2:
+            return x
+
+        r = x
+        while r > x // r:
+            r = (r + x // r) >> 1
+
+        return r
