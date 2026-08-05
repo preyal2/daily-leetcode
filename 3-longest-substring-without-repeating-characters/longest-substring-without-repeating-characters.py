@@ -1,14 +1,17 @@
 class Solution:
-  def lengthOfLongestSubstring(self, s: str) -> int:
-    ans = 0
-    count = collections.Counter()
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        last = {}
+        left = 0
+        ans = 0
 
-    l = 0
-    for r, c in enumerate(s):
-      count[c] += 1
-      while count[c] > 1:
-        count[s[l]] -= 1
-        l += 1
-      ans = max(ans, r - l + 1)
+        for right, c in enumerate(s):
+            if c in last and last[c] >= left:
+                left = last[c] + 1
 
-    return ans
+            last[c] = right
+
+            length = right - left + 1
+            if length > ans:
+                ans = length
+
+        return ans
