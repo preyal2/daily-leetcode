@@ -1,32 +1,32 @@
 class Solution:
-    def remainingMethods(
-        self, n: int, k: int, invocations: List[List[int]]
-    ) -> List[int]:
-        def dfs(i: int):
-            suspicious[i] = True
-            for j in g[i]:
-                if not suspicious[j]:
-                    dfs(j)
+  def remainingMethods(
+      self,
+      n: int,
+      k: int,
+      invocations: list[list[int]]
+  ) -> list[int]:
+    ans = []
+    graph = [[] for _ in range(n)]
 
-        def dfs2(i: int):
-            vis[i] = True
-            for j in f[i]:
-                if not vis[j]:
-                    suspicious[j] = False
-                    dfs2(j)
+    for u, v in invocations:
+      graph[u].append(v)
 
-        f = [[] for _ in range(n)]
-        g = [[] for _ in range(n)]
-        for a, b in invocations:
-            f[a].append(b)
-            f[b].append(a)
-            g[a].append(b)
-        suspicious = [False] * n
-        dfs(k)
+    q = collections.deque([k])
+    seen = {k}
 
-        vis = [False] * n
-        ans = []
-        for i in range(n):
-            if not suspicious[i] and not vis[i]:
-                dfs2(i)
-        return [i for i in range(n) if not suspicious[i]]
+    while q:
+      for _ in range(len(q)):
+        for v in graph[q.popleft()]:
+          if v not in seen:
+            q.append(v)
+            seen.add(v)
+
+    for u in range(n):
+      if u in seen:
+        continue
+      for v in graph[u]:
+        if v in seen:
+          return list(range(n))
+      ans.append(u)
+
+    return ans
