@@ -1,27 +1,25 @@
-MOD = 10**9 + 7
-pow10 = [1] * 100001
-for i in range(1, 100001):
-    pow10[i] = pow10[i - 1] * 10 % MOD
+mx = 10**5 + 1
+mod = 10**9 + 7
+pow10 = [1] * mx
+for i in range(1, mx):
+    pow10[i] = pow10[i - 1] * 10 % mod
 
 
 class Solution:
     def sumAndMultiply(self, s: str, queries: List[List[int]]) -> List[int]:
         n = len(s)
-        sum = [0] * (n + 1)
-        x = [0] * (n + 1)
-        cnt = [0] * (n + 1)
-        for i, c in enumerate(s):
-            d = int(c)
-            sum[i + 1] = sum[i] + d
-            x[i + 1] = (x[i] * 10 + d) % MOD if d > 0 else x[i]
-            cnt[i + 1] = cnt[i] + (d > 0)
+        sum_d = [0] * (n + 1)
+        cnt_n0 = [0] * (n + 1)
+        p = [0] * (n + 1)
+        for i, d in enumerate(map(int, s), 1):
+            sum_d[i] = sum_d[i - 1] + d
+            cnt_n0[i] = cnt_n0[i - 1] + int(d > 0)
+            p[i] = (p[i - 1] * 10 + d) % mod if d else p[i - 1]
 
-        m = len(queries)
-        res = [0] * m
-        for i in range(m):
-            l = queries[i][0]
-            r = queries[i][1] + 1
-            length = cnt[r] - cnt[l]
-            res[i] = (x[r] - x[l] * pow10[length]) * (sum[r] - sum[l]) % MOD
-
-        return res
+        ans = []
+        for l, r in queries:
+            n0 = cnt_n0[r + 1] - cnt_n0[l]
+            sd = sum_d[r + 1] - sum_d[l]
+            x = p[r + 1] - p[l] * pow10[n0] % mod
+            ans.append(x * sd % mod)
+        return ans
