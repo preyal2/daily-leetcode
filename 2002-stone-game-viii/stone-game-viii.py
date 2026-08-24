@@ -1,15 +1,17 @@
 class Solution:
-  def stoneGameVIII(self, stones: list[int]) -> int:
-    n = len(stones)
-    prefix = list(itertools.accumulate(stones))
-    # dp[i] := the maximum score difference the current player can get when the
-    # game starts at i, i.e. stones[0..i] are merged into the value prefix[i]
-    dp = [-math.inf] * n
+    def stoneGameVIII(self, stones: list[int]) -> int:
+        n = len(stones)
 
-    # Must take all when there're only two stones left.
-    dp[n - 2] = prefix[-1]
+        prefix = [0] * n
+        s = 0
 
-    for i in reversed(range(n - 2)):
-      dp[i] = max(dp[i + 1], prefix[i + 1] - dp[i + 1])
+        for i, x in enumerate(stones):
+            s += x
+            prefix[i] = s
 
-    return dp[0]
+        dp = prefix[-1]
+
+        for i in range(n - 3, -1, -1):
+            dp = max(dp, prefix[i + 1] - dp)
+
+        return dp
