@@ -3,9 +3,9 @@
 [![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Problems Solved](https://img.shields.io/badge/Problems_Solved-119-success?style=for-the-badge)](#-problems-solved)
+[![Problems Solved](https://img.shields.io/badge/Problems_Solved-121-success?style=for-the-badge)](#-problems-solved)
 
-> A curated collection of **119+** daily LeetCode problem solutions implemented cleanly and efficiently with optimal time & space complexity, mainly in **Python** and **Java**.
+> A curated collection of **121+** daily LeetCode problem solutions implemented cleanly and efficiently with optimal time & space complexity, mainly in **Python** and **Java**.
 
 ---
 
@@ -14,9 +14,9 @@
 | Difficulty | Count | Badge |
 | :--- | :---: | :--- |
 | **Easy** | 30 | `![](https://img.shields.io/badge/-Easy-brightgreen)` |
-| **Medium** | 62 | `![](https://img.shields.io/badge/-Medium-orange)` |
+| **Medium** | 64 | `![](https://img.shields.io/badge/-Medium-orange)` |
 | **Hard** | 27 | `![](https://img.shields.io/badge/-Hard-red)` |
-| **Total Solved** | **119** | `![](https://img.shields.io/badge/-119_Problems-blue)` |
+| **Total Solved** | **121** | `![](https://img.shields.io/badge/-121_Problems-blue)` |
 
 ---
 
@@ -69,7 +69,7 @@ daily-leetcode/
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | ![Hard](https://img.shields.io/badge/Hard-red) | Python | [`reverse-nodes-in-k-group.py`](./25-reverse-nodes-in-k-group/reverse-nodes-in-k-group.py) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`remove-duplicates-from-sorted-array.py`](./26-remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`remove-element.py`](./27-remove-element/remove-element.py) |
-| 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python, Java | [`find-the-index-of-the-first-occurrence-in-a-string.java`](./28-find-the-index-of-the-first-occurrence-in-a-string/find-the-index-of-the-first-occurrence-in-a-string.java) |
+| 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`find-the-index-of-the-first-occurrence-in-a-string.py`](./28-find-the-index-of-the-first-occurrence-in-a-string/find-the-index-of-the-first-occurrence-in-a-string.py) |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`divide-two-integers.py`](./29-divide-two-integers/divide-two-integers.py) |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | ![Hard](https://img.shields.io/badge/Hard-red) | Python | [`substring-with-concatenation-of-all-words.py`](./30-substring-with-concatenation-of-all-words/substring-with-concatenation-of-all-words.py) |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`next-permutation.py`](./31-next-permutation/next-permutation.py) |
@@ -112,6 +112,8 @@ daily-leetcode/
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification) | ![Hard](https://img.shields.io/badge/Hard-red) | Python | [`text-justification.py`](./68-text-justification/text-justification.py) |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`sqrtx.py`](./69-sqrtx/sqrtx.py) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`climbing-stairs.py`](./70-climbing-stairs/climbing-stairs.py) |
+| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`simplify-path.py`](./71-simplify-path/simplify-path.py) |
+| 72 | [Edit Distance](https://leetcode.com/problems/edit-distance) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`edit-distance.py`](./72-edit-distance/edit-distance.py) |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`find-the-duplicate-number.py`](./287-find-the-duplicate-number/find-the-duplicate-number.py) |
 | 628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`maximum-product-of-three-numbers.py`](./628-maximum-product-of-three-numbers/maximum-product-of-three-numbers.py) |
 | 909 | [Stone Game](https://leetcode.com/problems/stone-game) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`stone-game.py`](./909-stone-game/stone-game.py) |
