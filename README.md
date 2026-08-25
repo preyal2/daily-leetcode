@@ -2,10 +2,10 @@
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Problems Solved](https://img.shields.io/badge/Problems_Solved-121-success?style=for-the-badge)](#-problems-solved)
+[![Problems Solved](https://img.shields.io/badge/Problems_Solved-127-success?style=for-the-badge)](#-problems-solved)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)](./CONTRIBUTING.md)
 
-> A curated collection of **121+** daily LeetCode problem solutions implemented cleanly and efficiently with optimal time & space complexity, mainly in **Python** and **Java**.
+> A curated collection of **127+** daily LeetCode problem solutions implemented cleanly and efficiently with optimal time & space complexity in **Python**.
 
 ---
 
@@ -13,10 +13,10 @@
 
 | Difficulty | Count | Badge |
 | :--- | :---: | :--- |
-| **Easy** | 30 | `![](https://img.shields.io/badge/-Easy-brightgreen)` |
-| **Medium** | 64 | `![](https://img.shields.io/badge/-Medium-orange)` |
-| **Hard** | 27 | `![](https://img.shields.io/badge/-Hard-red)` |
-| **Total Solved** | **121** | `![](https://img.shields.io/badge/-121_Problems-blue)` |
+| **Easy** | 32 | `![](https://img.shields.io/badge/-Easy-brightgreen)` |
+| **Medium** | 67 | `![](https://img.shields.io/badge/-Medium-orange)` |
+| **Hard** | 28 | `![](https://img.shields.io/badge/-Hard-red)` |
+| **Total Solved** | **127** | `![](https://img.shields.io/badge/-127_Problems-blue)` |
 
 ---
 
@@ -24,16 +24,16 @@
 
 Each problem is organized in its own dedicated directory containing:
 - `README.md`: Problem statement, constraints, and LeetCode link.
-- Solution file(s): Clean source code (e.g. `.py` or `.java`) with optimized algorithmic approaches.
+- Solution file(s): Clean source code (e.g. `.py`) with optimized algorithmic approaches.
 
 ```text
 daily-leetcode/
 ├── 1-two-sum/
 │   ├── README.md
 │   └── two-sum.py
-├── 2-add-two-numbers/
+├── 121-best-time-to-buy-and-sell-stock/
 │   ├── README.md
-│   └── add-two-numbers.py
+│   └── best-time-to-buy-and-sell-stock.py
 ...
 ```
 
@@ -114,6 +114,11 @@ daily-leetcode/
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`climbing-stairs.py`](./70-climbing-stairs/climbing-stairs.py) |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`simplify-path.py`](./71-simplify-path/simplify-path.py) |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`edit-distance.py`](./72-edit-distance/edit-distance.py) |
+| 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`set-matrix-zeroes.py`](./73-set-matrix-zeroes/set-matrix-zeroes.py) |
+| 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`search-a-2d-matrix.py`](./74-search-a-2d-matrix/search-a-2d-matrix.py) |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`sort-colors.py`](./75-sort-colors/sort-colors.py) |
+| 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | ![Hard](https://img.shields.io/badge/Hard-red) | Python | [`minimum-window-substring.py`](./76-minimum-window-substring/minimum-window-substring.py) |
+| 121 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`best-time-to-buy-and-sell-stock.py`](./121-best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.py) |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`find-the-duplicate-number.py`](./287-find-the-duplicate-number/find-the-duplicate-number.py) |
 | 628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`maximum-product-of-three-numbers.py`](./628-maximum-product-of-three-numbers/maximum-product-of-three-numbers.py) |
 | 909 | [Stone Game](https://leetcode.com/problems/stone-game) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`stone-game.py`](./909-stone-game/stone-game.py) |
@@ -160,6 +165,7 @@ daily-leetcode/
 | 3918 | [Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`check-divisibility-by-digit-sum-and-product.py`](./3918-check-divisibility-by-digit-sum-and-product/check-divisibility-by-digit-sum-and-product.py) |
 | 3995 | [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`gcd-of-odd-and-even-sums.py`](./3995-gcd-of-odd-and-even-sums/gcd-of-odd-and-even-sums.py) |
 | 4033 | [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`longest-subsequence-with-non-zero-bitwise-xor.py`](./4033-longest-subsequence-with-non-zero-bitwise-xor/longest-subsequence-with-non-zero-bitwise-xor.py) |
+| 4080 | [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`smallest-missing-multiple-of-k.py`](./4080-smallest-missing-multiple-of-k/smallest-missing-multiple-of-k.py) |
 | 4107 | [Find Missing Elements](https://leetcode.com/problems/find-missing-elements) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`find-missing-elements.py`](./4107-find-missing-elements/find-missing-elements.py) |
 | 4135 | [Concatenate Non-Zero Digits and Multiply by Sum I](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python | [`concatenate-non-zero-digits-and-multiply-by-sum-i.py`](./4135-concatenate-non-zero-digits-and-multiply-by-sum-i/concatenate-non-zero-digits-and-multiply-by-sum-i.py) |
 | 4136 | [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python | [`concatenate-non-zero-digits-and-multiply-by-sum-ii.py`](./4136-concatenate-non-zero-digits-and-multiply-by-sum-ii/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) |
@@ -174,6 +180,12 @@ daily-leetcode/
 - **Trees & Graphs**: BFS, DFS, Trie, Union Find / Disjoint Set, Topological Sort
 - **Dynamic Programming & Greedy**: Memoization, Tabulation, Game Theory (Stone Games), Knapsack variations
 - **Math & Bit Manipulation**: GCD/LCM, Modular Arithmetic, Bitwise Operations
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome! Whether you want to add new problem solutions, optimize existing code, or add multi-language support, check out our [**Contributing Guide**](./CONTRIBUTING.md) to get started.
 
 ---
 
