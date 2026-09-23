@@ -1,23 +1,27 @@
 class Solution:
-  def minOperations(self, nums: list[int], x: int) -> int:
-    targetSum = sum(nums) - x
-    if targetSum == 0:
-      return len(nums)
-    maxLen = self._maxSubArrayLen(nums, targetSum)
-    return -1 if maxLen == -1 else len(nums) - maxLen
+    def minOperations(self, nums: list[int], x: int) -> int:
+        target = sum(nums) - x
+        n = len(nums)
 
-  # Same as 325. Maximum Size Subarray Sum Equals k
-  def _maxSubArrayLen(self, nums: list[int], k: int) -> int:
-    res = -1
-    prefix = 0
-    prefixToIndex = {0: -1}
+        if target < 0:
+            return -1
+        if target == 0:
+            return n
 
-    for i, num in enumerate(nums):
-      prefix += num
-      target = prefix - k
-      if target in prefixToIndex:
-        res = max(res, i - prefixToIndex[target])
-      # No need to check the existence of the prefix since it's unique.
-      prefixToIndex[prefix] = i
+        left = 0
+        cur = 0
+        longest = -1
 
-    return res
+        for right, v in enumerate(nums):
+            cur += v
+
+            while cur > target:
+                cur -= nums[left]
+                left += 1
+
+            if cur == target:
+                length = right - left + 1
+                if length > longest:
+                    longest = length
+
+        return -1 if longest == -1 else n - longest
