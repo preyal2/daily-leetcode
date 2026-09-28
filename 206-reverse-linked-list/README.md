@@ -1,0 +1,1 @@
+<h2><a href="https://leetcode.com/problems/reverse-linked-list">Reverse Linked List</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given the <code>head</code> of a singly linked list, reverse the list, and return <em>the reversed list</em>.</p>

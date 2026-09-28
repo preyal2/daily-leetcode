@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/longest-consecutive-sequence">Longest Consecutive Sequence</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given an unsorted array of integers <code>nums</code>, return <em>the length of the longest consecutive elements sequence</em>.</p>
+<p>You must write an algorithm that runs in&nbsp;<code>O(n)</code>&nbsp;time.</p>

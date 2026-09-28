@@ -4,13 +4,13 @@
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Problems Solved](https://img.shields.io/badge/Problems_Solved-158-success?style=for-the-badge)](#-complete-problem-catalog)
+[![Problems Solved](https://img.shields.io/badge/Problems_Solved-190-success?style=for-the-badge)](#-complete-problem-catalog)
 [![Automation](https://img.shields.io/badge/LeetSync-CI%2FCD_Automated-blueviolet?style=for-the-badge&logo=githubactions&logoColor=white)](#-automated-leetsync-pipeline)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)](./CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <b>A curated repository of 158+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
+  <b>A curated repository of 190+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
 </p>
 
 </div>
@@ -21,10 +21,10 @@
 
 This repository serves as a systematic, continuous algorithmic practice vault designed for Tier-1 and FAANG technical interviews. Every solution in this repository adheres to high software engineering standards:
 
-- **⚡ Sub-Millisecond Execution**: Solutions target 0ms (100th percentile) runtime by leveraging optimal data structures (`collections.deque`, `heapq`, `bisect`, bitwise manipulation).
+- **⚡ Sub-Millisecond Execution**: Solutions target 0ms (99th–100th percentile) runtime by leveraging optimal data structures (`collections.deque`, `heapq`, `bisect`, bitwise manipulation).
 - **⏱️ Formal Complexity Bounds**: Every algorithm is designed to meet strict upper-bound asymptotic time complexity ($O(1)$, $O(\log N)$, or $O(N)$) and minimal auxiliary space overhead.
 - **🛡️ Edge Case Resilience**: Explicit boundary testing for empty sets, null pointers, integer overflows, duplicate elements, and extreme constraints.
-- **🤖 Automated Synchronization**: Integrated with **LeetSync** for automated bi-directional commit logging from live LeetCode submissions.
+- **🤖 Automated Synchronization**: Integrated with **LeetSync** for automated bi-directional commit logging from live LeetCode submissions directly to GitHub.
 
 ---
 
@@ -34,10 +34,10 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 | Difficulty Level | Problems Solved | Distribution | Status Badge |
 | :--- | :---: | :---: | :--- |
-| **🟢 Easy** | **38** | 24.1% | `![](https://img.shields.io/badge/-Easy_38-brightgreen)` |
-| **🟡 Medium** | **87** | 55.1% | `![](https://img.shields.io/badge/-Medium_87-orange)` |
-| **🔴 Hard** | **33** | 20.9% | `![](https://img.shields.io/badge/-Hard_33-red)` |
-| **🏆 Total Solved** | **158** | **100%** | `![](https://img.shields.io/badge/-158_Total-blue)` |
+| **🟢 Easy** | **49** | 25.8% | `![](https://img.shields.io/badge/-Easy_49-brightgreen)` |
+| **🟡 Medium** | **101** | 53.2% | `![](https://img.shields.io/badge/-Medium_101-orange)` |
+| **🔴 Hard** | **40** | 21.1% | `![](https://img.shields.io/badge/-Hard_40-red)` |
+| **🏆 Total Solved** | **190** | **100%** | `![](https://img.shields.io/badge/-190_Total-blue)` |
 
 </div>
 
@@ -45,18 +45,18 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 ## 🧩 Point-to-Point Algorithmic Classification Matrix
 
-The **158 solved problems** in this repository span the following core computational paradigms:
+The **190 solved problems** in this repository span the following core computational paradigms:
 
 | Algorithmic Domain | Key Underlying Principles | Representative Solved Problems |
 | :--- | :--- | :--- |
-| **⚡ Arrays, Hashing & Two Pointers** | Fast element lookup in $O(1)$, frequency counters, bidirectional inward convergence. | [#1 Two Sum](https://leetcode.com/problems/two-sum), [#15 3Sum](https://leetcode.com/problems/3sum), [#11 Container With Most Water](https://leetcode.com/problems/container-with-most-water), [#75 Sort Colors](https://leetcode.com/problems/sort-colors) |
-| **🪟 Sliding Window & Substrings** | Dynamic subarray resizing, frequency map state tracking, character boundary optimization. | [#3 Longest Substring](https://leetcode.com/problems/longest-substring-without-repeating-characters), [#76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |
-| **🔗 Linked Lists & Pointer Arithmetic** | Sentinel dummy heads, in-place node reversals, fast & slow tortoise-hare pointers. | [#2 Add Two Numbers](https://leetcode.com/problems/add-two-numbers), [#61 Rotate List](https://leetcode.com/problems/rotate-list), [#82 Remove Duplicates II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |
-| **🌲 Binary Trees & Heaps** | DFS/BFS tree traversals, BST validation, min/max heap priority queues. | [#2182 Critical Points in Nodes](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points), [#2347 Nodes Equal to Average](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree) |
-| **🔄 Backtracking & Recursion** | State-space exploration, branch pruning, constraint validation, combinatorial generation. | [#39 Combination Sum](https://leetcode.com/problems/combination-sum), [#46 Permutations](https://leetcode.com/problems/permutations), [#51 N-Queens](https://leetcode.com/problems/n-queens), [#77 Combinations](https://leetcode.com/problems/combinations), [#78 Subsets](https://leetcode.com/problems/subsets) |
-| **📈 Dynamic Programming** | Memoization, bottom-up tabulation, optimal substructure, DAG transitions. | [#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray), [#62 Unique Paths](https://leetcode.com/problems/unique-paths), [#64 Min Path Sum](https://leetcode.com/problems/minimum-path-sum), [#72 Edit Distance](https://leetcode.com/problems/edit-distance), [#115 Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) |
-| **🌐 Graph Theory & Grid Traversal** | Breadth-First Search (BFS), Depth-First Search (DFS), topological sort, shortest paths. | [#2582 Minimum Score Path](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities), [#79 Word Search](https://leetcode.com/problems/word-search) |
-| **🔢 Math, Bitwise & Strings** | Bit manipulation, GCD/Euclidean algorithms, modular arithmetic, string parsing. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#4371 Maximize Pair Strength](https://leetcode.com/problems/maximize-pair-strength-using-gcd) |
+| **⚡ Arrays, Hashing & Two Pointers** | Fast element lookup in $O(1)$, frequency counters, bidirectional inward convergence. | [#1 Two Sum](https://leetcode.com/problems/two-sum), [#11 Container With Most Water](https://leetcode.com/problems/container-with-most-water), [#15 3Sum](https://leetcode.com/problems/3sum), [#75 Sort Colors](https://leetcode.com/problems/sort-colors), [#88 Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array), [#128 Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) |
+| **🪟 Sliding Window & Substrings** | Dynamic subarray resizing, frequency map state tracking, character boundary optimization. | [#3 Longest Substring](https://leetcode.com/problems/longest-substring-without-repeating-characters), [#76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring), [#1298 Reverse Substrings Between Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses) |
+| **🔗 Linked Lists & Pointer Arithmetic** | Sentinel dummy heads, in-place node reversals, fast & slow tortoise-hare pointers. | [#2 Add Two Numbers](https://leetcode.com/problems/add-two-numbers), [#61 Rotate List](https://leetcode.com/problems/rotate-list), [#82 Remove Duplicates II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii), [#86 Partition List](https://leetcode.com/problems/partition-list), [#141 Linked List Cycle](https://leetcode.com/problems/linked-list-cycle), [#206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
+| **🌲 Binary Trees & Heaps** | DFS/BFS tree traversals, BST validation, min/max heap priority queues. | [#94 Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal), [#98 Validate BST](https://leetcode.com/problems/validate-binary-search-tree), [#100 Same Tree](https://leetcode.com/problems/same-tree), [#102 Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal), [#104 Maximum Depth](https://leetcode.com/problems/maximum-depth-of-binary-tree), [#2347 Nodes Equal to Average](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree) |
+| **🔄 Backtracking & Recursion** | State-space exploration, branch pruning, constraint validation, combinatorial generation. | [#39 Combination Sum](https://leetcode.com/problems/combination-sum), [#46 Permutations](https://leetcode.com/problems/permutations), [#51 N-Queens](https://leetcode.com/problems/n-queens), [#77 Combinations](https://leetcode.com/problems/combinations), [#78 Subsets](https://leetcode.com/problems/subsets), [#90 Subsets II](https://leetcode.com/problems/subsets-ii) |
+| **📈 Dynamic Programming** | Memoization, bottom-up tabulation, optimal substructure, DAG transitions. | [#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray), [#62 Unique Paths](https://leetcode.com/problems/unique-paths), [#64 Min Path Sum](https://leetcode.com/problems/minimum-path-sum), [#72 Edit Distance](https://leetcode.com/problems/edit-distance), [#87 Scramble String](https://leetcode.com/problems/scramble-string), [#91 Decode Ways](https://leetcode.com/problems/decode-ways), [#115 Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) |
+| **🌐 Graph Theory & Reachability** | Breadth-First Search (BFS), Depth-First Search (DFS), topological sort, binary lifting. | [#79 Word Search](https://leetcode.com/problems/word-search), [#2582 Minimum Score Path](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities), [#3852 Path Existence Queries II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) |
+| **🔢 Math, Bitwise & Strings** | Bit manipulation, Gray codes, GCD/Euclidean algorithms, modular arithmetic, comma parsing. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#89 Gray Code](https://leetcode.com/problems/gray-code), [#136 Single Number](https://leetcode.com/problems/single-number), [#1737 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses), [#4248 Count Commas II](https://leetcode.com/problems/count-commas-in-range-ii) |
 
 ---
 
@@ -94,19 +94,19 @@ daily-leetcode/
 ├── 1-two-sum/
 │   ├── README.md                              # Problem statement, examples & constraints
 │   └── two-sum.py                             # Optimal Python 3.12 implementation
-├── 77-combinations/
+├── 89-gray-code/
 │   ├── README.md
-│   └── combinations.py
-├── 121-best-time-to-buy-and-sell-stock/
+│   └── gray-code.py
+├── 206-reverse-linked-list/
 │   ├── README.md
-│   └── best-time-to-buy-and-sell-stock.py
+│   └── reverse-linked-list.py
 ├── CONTRIBUTING.md                            # Guidelines for community contributions
 └── README.md                                  # Complete repository documentation & catalog
 ```
 
 ---
 
-## 📝 Complete Problem Catalog (158 Solved)
+## 📝 Complete Problem Catalog (190 Solved)
 
 | # | Problem Title | Difficulty | Language | Solution File |
 | :-: | :--- | :-: | :-: | :--- |
@@ -119,7 +119,7 @@ daily-leetcode/
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`reverse-integer.py`](./7-reverse-integer/reverse-integer.py) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`palindrome-number.py`](./9-palindrome-number/palindrome-number.py) |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`regular-expression-matching.py`](./10-regular-expression-matching/regular-expression-matching.py) |
-| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`README.md`](./11-container-with-most-water/README.md) |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`container-with-most-water.py`](./11-container-with-most-water/container-with-most-water.py) |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`integer-to-roman.py`](./12-integer-to-roman/integer-to-roman.py) |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`roman-to-integer.py`](./13-roman-to-integer/roman-to-integer.py) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`longest-common-prefix.py`](./14-longest-common-prefix/longest-common-prefix.py) |
@@ -154,7 +154,7 @@ daily-leetcode/
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`multiply-strings.py`](./43-multiply-strings/multiply-strings.py) |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`wildcard-matching.py`](./44-wildcard-matching/wildcard-matching.py) |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`jump-game-ii.py`](./45-jump-game-ii/jump-game-ii.py) |
-| 46 | [Permutations](https://leetcode.com/problems/permutations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`README.md`](./46-permutations/README.md) |
+| 46 | [Permutations](https://leetcode.com/problems/permutations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`permutations.py`](./46-permutations/permutations.py) |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`permutations-ii.py`](./47-permutations-ii/permutations-ii.py) |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`rotate-image.py`](./48-rotate-image/rotate-image.py) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`group-anagrams.py`](./49-group-anagrams/group-anagrams.py) |
@@ -185,30 +185,57 @@ daily-leetcode/
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`search-a-2d-matrix.py`](./74-search-a-2d-matrix/search-a-2d-matrix.py) |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sort-colors.py`](./75-sort-colors/sort-colors.py) |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`minimum-window-substring.py`](./76-minimum-window-substring/minimum-window-substring.py) |
-| 77 | [Combinations](https://leetcode.com/problems/combinations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`combinations.py`](./77-combinations/combinations.py) |
+| 77 | [77. Combinations](https://leetcode.com/problems/combinations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`combinations.py`](./77-combinations/combinations.py) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`subsets.py`](./78-subsets/subsets.py) |
 | 79 | [Word Search](https://leetcode.com/problems/word-search) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`word-search.py`](./79-word-search/word-search.py) |
 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`remove-duplicates-from-sorted-array-ii.py`](./80-remove-duplicates-from-sorted-array-ii/remove-duplicates-from-sorted-array-ii.py) |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`search-in-rotated-sorted-array-ii.py`](./81-search-in-rotated-sorted-array-ii/search-in-rotated-sorted-array-ii.py) |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`remove-duplicates-from-sorted-list-ii.py`](./82-remove-duplicates-from-sorted-list-ii/remove-duplicates-from-sorted-list-ii.py) |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`remove-duplicates-from-sorted-list.py`](./83-remove-duplicates-from-sorted-list/remove-duplicates-from-sorted-list.py) |
+| 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`largest-rectangle-in-histogram.py`](./84-largest-rectangle-in-histogram/largest-rectangle-in-histogram.py) |
+| 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`maximal-rectangle.py`](./85-maximal-rectangle/maximal-rectangle.py) |
+| 86 | [Partition List](https://leetcode.com/problems/partition-list) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`partition-list.py`](./86-partition-list/partition-list.py) |
+| 87 | [Scramble String](https://leetcode.com/problems/scramble-string) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`scramble-string.py`](./87-scramble-string/scramble-string.py) |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`merge-sorted-array.py`](./88-merge-sorted-array/merge-sorted-array.py) |
+| 89 | [Gray Code](https://leetcode.com/problems/gray-code) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`gray-code.py`](./89-gray-code/gray-code.py) |
+| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`subsets-ii.py`](./90-subsets-ii/subsets-ii.py) |
+| 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`decode-ways.py`](./91-decode-ways/decode-ways.py) |
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`binary-tree-inorder-traversal.py`](./94-binary-tree-inorder-traversal/binary-tree-inorder-traversal.py) |
+| 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`validate-binary-search-tree.py`](./98-validate-binary-search-tree/validate-binary-search-tree.py) |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`same-tree.py`](./100-same-tree/same-tree.py) |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`binary-tree-level-order-traversal.py`](./102-binary-tree-level-order-traversal/binary-tree-level-order-traversal.py) |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-depth-of-binary-tree.py`](./104-maximum-depth-of-binary-tree/maximum-depth-of-binary-tree.py) |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`distinct-subsequences.py`](./115-distinct-subsequences/distinct-subsequences.py) |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`best-time-to-buy-and-sell-stock.py`](./121-best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.py) |
+| 121 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`best-time-to-buy-and-sell-stock.py`](./121-best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.py) |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`longest-consecutive-sequence.py`](./128-longest-consecutive-sequence/longest-consecutive-sequence.py) |
+| 136 | [Single Number](https://leetcode.com/problems/single-number) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`single-number.py`](./136-single-number/single-number.py) |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`linked-list-cycle.py`](./141-linked-list-cycle/linked-list-cycle.py) |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`reverse-linked-list.py`](./206-reverse-linked-list/reverse-linked-list.py) |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-the-duplicate-number.py`](./287-find-the-duplicate-number/find-the-duplicate-number.py) |
 | 628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-product-of-three-numbers.py`](./628-maximum-product-of-three-numbers/maximum-product-of-three-numbers.py) |
 | 864 | [Image Overlap](https://leetcode.com/problems/image-overlap) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`image-overlap.py`](./864-image-overlap/image-overlap.py) |
+| 866 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`rectangle-overlap.py`](./866-rectangle-overlap/rectangle-overlap.py) |
 | 909 | [Stone Game](https://leetcode.com/problems/stone-game) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`stone-game.py`](./909-stone-game/stone-game.py) |
 | 977 | [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`distinct-subsequences-ii.py`](./977-distinct-subsequences-ii/distinct-subsequences-ii.py) |
 | 1159 | [Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`smallest-subsequence-of-distinct-characters.py`](./1159-smallest-subsequence-of-distinct-characters/smallest-subsequence-of-distinct-characters.py) |
+| 1188 | [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`brace-expansion-ii.py`](./1188-brace-expansion-ii/brace-expansion-ii.py) |
 | 1212 | [Sequential Digits](https://leetcode.com/problems/sequential-digits) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sequential-digits.py`](./1212-sequential-digits/sequential-digits.py) |
 | 1240 | [Stone Game II](https://leetcode.com/problems/stone-game-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`stone-game-ii.py`](./1240-stone-game-ii/stone-game-ii.py) |
 | 1256 | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`rank-transform-of-an-array.py`](./1256-rank-transform-of-an-array/rank-transform-of-an-array.py) |
+| 1298 | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`reverse-substrings-between-each-pair-of-parentheses.py`](./1298-reverse-substrings-between-each-pair-of-parentheses/reverse-substrings-between-each-pair-of-parentheses.py) |
 | 1386 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`shift-2d-grid.py`](./1386-shift-2d-grid/shift-2d-grid.py) |
 | 1487 | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`cinema-seat-allocation.py`](./1487-cinema-seat-allocation/cinema-seat-allocation.py) |
+| 1501 | [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`circle-and-rectangle-overlapping.py`](./1501-circle-and-rectangle-overlapping/circle-and-rectangle-overlapping.py) |
 | 1522 | [Stone Game III](https://leetcode.com/problems/stone-game-iii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-iii.py`](./1522-stone-game-iii/stone-game-iii.py) |
+| 1573 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-two-non-overlapping-sub-arrays-each-with-target-sum.py`](./1573-find-two-non-overlapping-sub-arrays-each-with-target-sum/find-two-non-overlapping-sub-arrays-each-with-target-sum.py) |
 | 1574 | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-product-of-two-elements-in-an-array.py`](./1574-maximum-product-of-two-elements-in-an-array/maximum-product-of-two-elements-in-an-array.py) |
 | 1617 | [Stone Game IV](https://leetcode.com/problems/stone-game-iv) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-iv.py`](./1617-stone-game-iv/stone-game-iv.py) |
+| 1644 | [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`maximum-number-of-non-overlapping-substrings.py`](./1644-maximum-number-of-non-overlapping-substrings/maximum-number-of-non-overlapping-substrings.py) |
 | 1685 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-v.py`](./1685-stone-game-v/stone-game-v.py) |
+| 1725 | [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`number-of-sets-of-k-non-overlapping-line-segments.py`](./1725-number-of-sets-of-k-non-overlapping-line-segments/number-of-sets-of-k-non-overlapping-line-segments.py) |
+| 1737 | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-nesting-depth-of-the-parentheses.py`](./1737-maximum-nesting-depth-of-the-parentheses/maximum-nesting-depth-of-the-parentheses.py) |
+| 1776 | [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`minimum-operations-to-reduce-x-to-zero.py`](./1776-minimum-operations-to-reduce-x-to-zero/minimum-operations-to-reduce-x-to-zero.py) |
+| 1934 | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`evaluate-the-bracket-pairs-of-a-string.py`](./1934-evaluate-the-bracket-pairs-of-a-string/evaluate-the-bracket-pairs-of-a-string.py) |
 | 2002 | [Stone Game VIII](https://leetcode.com/problems/stone-game-viii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-viii.py`](./2002-stone-game-viii/stone-game-viii.py) |
 | 2039 | [Sum Game](https://leetcode.com/problems/sum-game) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sum-game.py`](./2039-sum-game/sum-game.py) |
 | 2106 | [Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`find-greatest-common-divisor-of-array.py`](./2106-find-greatest-common-divisor-of-array/find-greatest-common-divisor-of-array.py) |
@@ -217,13 +244,14 @@ daily-leetcode/
 | 2212 | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`removing-minimum-and-maximum-from-array.py`](./2212-removing-minimum-and-maximum-from-array/removing-minimum-and-maximum-from-array.py) |
 | 2319 | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`longest-substring-of-one-repeating-character.py`](./2319-longest-substring-of-one-repeating-character/longest-substring-of-one-repeating-character.py) |
 | 2347 | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`count-nodes-equal-to-average-of-subtree.py`](./2347-count-nodes-equal-to-average-of-subtree/count-nodes-equal-to-average-of-subtree.py) |
+| 2559 | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`maximum-number-of-non-overlapping-palindrome-substrings.py`](./2559-maximum-number-of-non-overlapping-palindrome-substrings/maximum-number-of-non-overlapping-palindrome-substrings.py) |
 | 2582 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`minimum-score-of-a-path-between-two-cities.py`](./2582-minimum-score-of-a-path-between-two-cities/minimum-score-of-a-path-between-two-cities.py) |
 | 2793 | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`count-the-number-of-complete-components.py`](./2793-count-the-number-of-complete-components/count-the-number-of-complete-components.py) |
 | 2914 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-the-safest-path-in-a-grid.py`](./2914-find-the-safest-path-in-a-grid/find-the-safest-path-in-a-grid.py) |
 | 3150 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`shortest-and-lexicographically-smallest-beautiful-string.py`](./3150-shortest-and-lexicographically-smallest-beautiful-string/shortest-and-lexicographically-smallest-beautiful-string.py) |
 | 3219 | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`make-lexicographically-smallest-array-by-swapping-elements.py`](./3219-make-lexicographically-smallest-array-by-swapping-elements/make-lexicographically-smallest-array-by-swapping-elements.py) |
 | 3225 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`length-of-longest-subarray-with-at-most-k-frequency.py`](./3225-length-of-longest-subarray-with-at-most-k-frequency/length-of-longest-subarray-with-at-most-k-frequency.py) |
-| 3236 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`README.md`](./3236-smallest-missing-integer-greater-than-sequential-prefix-sum/README.md) |
+| 3236 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`smallest-missing-integer-greater-than-sequential-prefix-sum.py`](./3236-smallest-missing-integer-greater-than-sequential-prefix-sum/smallest-missing-integer-greater-than-sequential-prefix-sum.py) |
 | 3275 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`minimum-number-of-pushes-to-type-word-i.py`](./3275-minimum-number-of-pushes-to-type-word-i/minimum-number-of-pushes-to-type-word-i.py) |
 | 3276 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`minimum-number-of-pushes-to-type-word-ii.py`](./3276-minimum-number-of-pushes-to-type-word-ii/minimum-number-of-pushes-to-type-word-ii.py) |
 | 3349 | [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-length-substring-with-two-occurrences.py`](./3349-maximum-length-substring-with-two-occurrences/maximum-length-substring-with-two-occurrences.py) |
@@ -240,13 +268,17 @@ daily-leetcode/
 | 3799 | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`unique-3-digit-even-numbers.py`](./3799-unique-3-digit-even-numbers/unique-3-digit-even-numbers.py) |
 | 3804 | [Maximize Active Section with Trade II](https://leetcode.com/problems/maximize-active-section-with-trade-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`maximize-active-section-with-trade-ii.py`](./3804-maximize-active-section-with-trade-ii/maximize-active-section-with-trade-ii.py) |
 | 3805 | [Maximize Active Section with Trade I](https://leetcode.com/problems/maximize-active-section-with-trade-i) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`maximize-active-section-with-trade-i.py`](./3805-maximize-active-section-with-trade-i/maximize-active-section-with-trade-i.py) |
+| 3811 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`reverse-degree-of-a-string.py`](./3811-reverse-degree-of-a-string/reverse-degree-of-a-string.py) |
 | 3812 | [Smallest Palindromic Rearrangement I](https://leetcode.com/problems/smallest-palindromic-rearrangement-i) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`smallest-palindromic-rearrangement-i.py`](./3812-smallest-palindromic-rearrangement-i/smallest-palindromic-rearrangement-i.py) |
 | 3813 | [Smallest Palindromic Rearrangement II](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`smallest-palindromic-rearrangement-ii.py`](./3813-smallest-palindromic-rearrangement-ii/smallest-palindromic-rearrangement-ii.py) |
 | 3820 | [Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`number-of-unique-xor-triplets-ii.py`](./3820-number-of-unique-xor-triplets-ii/number-of-unique-xor-triplets-ii.py) |
 | 3824 | [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`number-of-unique-xor-triplets-i.py`](./3824-number-of-unique-xor-triplets-i/number-of-unique-xor-triplets-i.py) |
+| 3831 | [Find X Value of Array I](https://leetcode.com/problems/find-x-value-of-array-i) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-x-value-of-array-i.py`](./3831-find-x-value-of-array-i/find-x-value-of-array-i.py) |
 | 3838 | [Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`path-existence-queries-in-a-graph-i.py`](./3838-path-existence-queries-in-a-graph-i/path-existence-queries-in-a-graph-i.py) |
-| 3852 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`README.md`](./3852-path-existence-queries-in-a-graph-ii/README.md) |
+| 3840 | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`find-x-value-of-array-ii.py`](./3840-find-x-value-of-array-ii/find-x-value-of-array-ii.py) |
+| 3852 | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`path-existence-queries-in-a-graph-ii.py`](./3852-path-existence-queries-in-a-graph-ii/path-existence-queries-in-a-graph-ii.py) |
 | 3859 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-product-of-two-digits.py`](./3859-maximum-product-of-two-digits/maximum-product-of-two-digits.py) |
+| 3869 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`smallest-index-with-digit-sum-equal-to-index.py`](./3869-smallest-index-with-digit-sum-equal-to-index/smallest-index-with-digit-sum-equal-to-index.py) |
 | 3870 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`minimum-moves-to-clean-the-classroom.py`](./3870-minimum-moves-to-clean-the-classroom/minimum-moves-to-clean-the-classroom.py) |
 | 3918 | [Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`check-divisibility-by-digit-sum-and-product.py`](./3918-check-divisibility-by-digit-sum-and-product/check-divisibility-by-digit-sum-and-product.py) |
 | 3995 | [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`gcd-of-odd-and-even-sums.py`](./3995-gcd-of-odd-and-even-sums/gcd-of-odd-and-even-sums.py) |
@@ -260,7 +292,7 @@ daily-leetcode/
 | 4203 | [Count of Unfinished Tasks After Each Shift](https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`count-of-unfinished-tasks-after-each-shift.py`](./4203-count-of-unfinished-tasks-after-each-shift/count-of-unfinished-tasks-after-each-shift.py) |
 | 4242 | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sum-of-gcd-of-formed-pairs.py`](./4242-sum-of-gcd-of-formed-pairs/sum-of-gcd-of-formed-pairs.py) |
 | 4245 | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`count-commas-in-range.py`](./4245-count-commas-in-range/count-commas-in-range.py) |
-| 4248 | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`README.md`](./4248-count-commas-in-range-ii/README.md) |
+| 4248 | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`count-commas-in-range-ii.py`](./4248-count-commas-in-range-ii/count-commas-in-range-ii.py) |
 | 4256 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`construct-uniform-parity-array-i.py`](./4256-construct-uniform-parity-array-i/construct-uniform-parity-array-i.py) |
 | 4258 | [Construct Uniform Parity Array II](https://leetcode.com/problems/construct-uniform-parity-array-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`construct-uniform-parity-array-ii.py`](./4258-construct-uniform-parity-array-ii/construct-uniform-parity-array-ii.py) |
 | 4284 | [Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`smallest-stable-index-i.py`](./4284-smallest-stable-index-i/smallest-stable-index-i.py) |
@@ -282,12 +314,20 @@ daily-leetcode/
 git clone https://github.com/preyal2/daily-leetcode.git
 cd daily-leetcode
 
-# Example: Run LeetCode 77 Combinations test
+# Example 1: Run LeetCode 11 Container With Most Water
 python -c "
 from importlib import import_module
-mod = import_module('77-combinations.combinations')
+mod = import_module('11-container-with-most-water.container-with-most-water')
 sol = mod.Solution()
-print('Combinations result:', sol.combine(4, 2))
+print('Max Area:', sol.maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]))
+"
+
+# Example 2: Run LeetCode 89 Gray Code
+python -c "
+from importlib import import_module
+mod = import_module('89-gray-code.gray-code')
+sol = mod.Solution()
+print('Gray Code (n=3):', sol.grayCode(3))
 "
 ```
 

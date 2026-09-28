@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/decode-ways">Decode Ways</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You have intercepted a secret message encoded as a string of numbers. The message is decoded via the mapping: 'A' -> "1", 'B' -> "2", ..., 'Z' -> "26".</p>
+<p>Given a string <code>s</code> containing only digits, return <em>the <strong>number of ways</strong> to decode it</em>.</p>
