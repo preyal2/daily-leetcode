@@ -1,27 +1,15 @@
-from typing import Optional
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    def sortedArrayToBST(self, nums: list[int]) -> Optional[TreeNode]:
-        """
-        Constructs a height-balanced BST from sorted array via divide-and-conquer.
-
-        Time Complexity: O(N) visits each element once to build node.
-        Space Complexity: O(log N) recursion depth for height-balanced tree.
-        """
-        def build_bst(left: int, right: int) -> Optional[TreeNode]:
-            if left > right:
+    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+        def dfs(l: int, r: int) -> Optional[TreeNode]:
+            if l > r:
                 return None
+            mid = (l + r) >> 1
+            return TreeNode(nums[mid], dfs(l, mid - 1), dfs(mid + 1, r))
 
-            mid = (left + right) // 2
-            root = TreeNode(nums[mid])
-            root.left = build_bst(left, mid - 1)
-            root.right = build_bst(mid + 1, right)
-            return root
-
-        return build_bst(0, len(nums) - 1)
+        return dfs(0, len(nums) - 1)
