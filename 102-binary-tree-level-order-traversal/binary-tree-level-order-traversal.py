@@ -1,36 +1,23 @@
-from collections import deque
-from typing import Optional
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> list[list[int]]:
-        """
-        Breadth-First Search (BFS) level-order traversal using double-ended queue.
-
-        Time Complexity: O(N) visits each node once.
-        Space Complexity: O(W) maximum queue width where W <= N/2 for full binary tree.
-        """
-        if not root:
-            return []
-
-        levels = []
-        queue = deque([root])
-
-        while queue:
-            level_size = len(queue)
-            current_level = []
-            for _ in range(level_size):
-                node = queue.popleft()
-                current_level.append(node.val)
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        ans = []
+        if root is None:
+            return ans
+        q = deque([root])
+        while q:
+            t = []
+            for _ in range(len(q)):
+                node = q.popleft()
+                t.append(node.val)
                 if node.left:
-                    queue.append(node.left)
+                    q.append(node.left)
                 if node.right:
-                    queue.append(node.right)
-            levels.append(current_level)
-
-        return levels
+                    q.append(node.right)
+            ans.append(t)
+        return ans
