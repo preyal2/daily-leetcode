@@ -1,34 +1,17 @@
-from typing import Optional
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        """
-        Determines if binary tree is height-balanced in bottom-up O(N) time.
-
-        Time Complexity: O(N) visits each node once with early termination.
-        Space Complexity: O(H) recursion stack proportional to tree height H.
-        """
-        def check_height(node: Optional[TreeNode]) -> int:
-            if not node:
+        def height(root):
+            if root is None:
                 return 0
-
-            left_height = check_height(node.left)
-            if left_height == -1:
+            l, r = height(root.left), height(root.right)
+            if l == -1 or r == -1 or abs(l - r) > 1:
                 return -1
+            return 1 + max(l, r)
 
-            right_height = check_height(node.right)
-            if right_height == -1:
-                return -1
-
-            if abs(left_height - right_height) > 1:
-                return -1
-
-            return 1 + max(left_height, right_height)
-
-        return check_height(root) != -1
+        return height(root) >= 0
