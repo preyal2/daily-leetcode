@@ -1,24 +1,21 @@
-from typing import Optional
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        """
-        Validates BST property using recursive min/max boundary propagation.
-
-        Time Complexity: O(N) visits each node at most once.
-        Space Complexity: O(H) recursion stack where H is the tree height.
-        """
-        def validate(node: Optional[TreeNode], low: float, high: float) -> bool:
-            if not node:
+        def dfs(root: Optional[TreeNode]) -> bool:
+            if root is None:
                 return True
-            if not (low < node.val < high):
+            if not dfs(root.left):
                 return False
-            return validate(node.left, low, node.val) and validate(node.right, node.val, high)
+            nonlocal prev
+            if prev >= root.val:
+                return False
+            prev = root.val
+            return dfs(root.right)
 
-        return validate(root, float('-inf'), float('inf'))
+        prev = -inf
+        return dfs(root)
