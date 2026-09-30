@@ -1,23 +1,18 @@
 class Solution:
-    def subsetsWithDup(self, nums: list[int]) -> list[list[int]]:
-        """
-        Generates unique subsets with duplicate pruning after sorting.
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        def dfs(i: int):
+            if i == len(nums):
+                ans.append(t[:])
+                return
+            t.append(nums[i])
+            dfs(i + 1)
+            x = t.pop()
+            while i + 1 < len(nums) and nums[i + 1] == x:
+                i += 1
+            dfs(i + 1)
 
-        Time Complexity: O(N * 2^N) generating at most 2^N subsets of length up to N.
-        Space Complexity: O(N) recursion call stack depth.
-        """
         nums.sort()
-        res = []
-        path = []
-
-        def backtrack(start: int):
-            res.append(path[:])
-            for i in range(start, len(nums)):
-                if i > start and nums[i] == nums[i - 1]:
-                    continue
-                path.append(nums[i])
-                backtrack(i + 1)
-                path.pop()
-
-        backtrack(0)
-        return res
+        ans = []
+        t = []
+        dfs(0)
+        return ans
