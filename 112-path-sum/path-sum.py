@@ -1,23 +1,26 @@
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
-        if root is None:
+        if not root:
             return False
 
         stack = [(root, targetSum)]
 
         while stack:
-            node, remaining = stack.pop()
-            remaining -= node.val
+            node, s = stack.pop()
+            s -= node.val
 
-            if node.left is None and node.right is None:
-                if remaining == 0:
+            left = node.left
+            right = node.right
+
+            if left is None and right is None:
+                if s == 0:
                     return True
                 continue
 
-            if node.right:
-                stack.append((node.right, remaining))
+            if left is not None:
+                stack.append((left, s))
 
-            if node.left:
-                stack.append((node.left, remaining))
+            if right is not None:
+                stack.append((right, s))
 
         return False
