@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/copy-list-with-random-pointer">Copy List with Random Pointer</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>A linked list of length <code>n</code> is given such that each node contains an additional random pointer, which could point to any node in the list, or <code>null</code>.</p>
+<p>Construct a <strong><a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy" target="_blank">deep copy</a></strong> of the list.</p>

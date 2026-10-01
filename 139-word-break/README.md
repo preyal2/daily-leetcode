@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/word-break">Word Break</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given a string <code>s</code> and a dictionary of strings <code>wordDict</code>, return <code>true</code> if <code>s</code> can be segmented into a space-separated sequence of one or more dictionary words.</p>
+<p>Note that the same word in the dictionary may be reused multiple times in the segmentation.</p>

@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/sum-root-to-leaf-numbers">Sum Root to Leaf Numbers</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given the <code>root</code> of a binary tree containing digits from <code>0</code> to <code>9</code> only.</p>
+<p>Each root-to-leaf path in the tree represents a number. For example, the root-to-leaf path <code>1 -> 2 -> 3</code> represents the number <code>123</code>.</p>
+<p>Return <em>the total sum of all root-to-leaf numbers</em>. Test cases are generated so that the answer will fit in a <strong>32-bit</strong> integer.</p>

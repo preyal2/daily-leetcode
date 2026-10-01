@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/pascals-triangle">Pascal's Triangle</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an integer <code>numRows</code>, return the first <code>numRows</code> of <strong>Pascal's triangle</strong>.</p>
+<p>In <strong>Pascal's triangle</strong>, each number is the sum of the two numbers directly above it.</p>
