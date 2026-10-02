@@ -3,31 +3,30 @@ class Solution:
         cur = root
 
         while cur:
-            next_head = None
-            next_tail = None
+            head = tail = None
 
             while cur:
                 left = cur.left
                 if left:
-                    if next_head is None:
-                        next_head = left
+                    if head is None:
+                        head = left
                     else:
-                        next_tail.next = left
-                    next_tail = left
+                        tail.next = left
+                    tail = left
 
                 right = cur.right
                 if right:
-                    if next_head is None:
-                        next_head = right
+                    if head is None:
+                        head = right
                     else:
-                        next_tail.next = right
-                    next_tail = right
+                        tail.next = right
+                    tail = right
 
                 cur = cur.next
 
-            if next_tail:
-                next_tail.next = None
+            if tail:
+                tail.next = None
 
-            cur = next_head
+            cur = head
 
         return root
