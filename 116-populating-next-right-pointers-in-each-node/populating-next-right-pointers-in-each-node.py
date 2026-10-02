@@ -1,28 +1,33 @@
-"""
-# Definition for a Node.
-class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.next = next
-"""
-
-
 class Solution:
     def connect(self, root: "Optional[Node]") -> "Optional[Node]":
-        if root is None:
-            return root
-        q = deque([root])
-        while q:
-            p = None
-            for _ in range(len(q)):
-                node = q.popleft()
-                if p:
-                    p.next = node
-                p = node
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
+        cur = root
+
+        while cur:
+            next_head = None
+            next_tail = None
+
+            while cur:
+                left = cur.left
+                if left:
+                    if next_head is None:
+                        next_head = left
+                    else:
+                        next_tail.next = left
+                    next_tail = left
+
+                right = cur.right
+                if right:
+                    if next_head is None:
+                        next_head = right
+                    else:
+                        next_tail.next = right
+                    next_tail = right
+
+                cur = cur.next
+
+            if next_tail:
+                next_tail.next = None
+
+            cur = next_head
+
         return root
