@@ -1,20 +1,22 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         ans = []
-        path = [''] * (n * 2)
+        path = [''] * (n << 1)
+        N = n << 1
+        append = ans.append
 
-        def dfs(pos, left, right):
-            if pos == n * 2:
-                ans.append(''.join(path))
+        def dfs(pos, l, r):
+            if pos == N:
+                append(''.join(path))
                 return
 
-            if left < n:
+            if l < n:
                 path[pos] = '('
-                dfs(pos + 1, left + 1, right)
+                dfs(pos + 1, l + 1, r)
 
-            if right < left:
+            if r < l:
                 path[pos] = ')'
-                dfs(pos + 1, left, right + 1)
+                dfs(pos + 1, l, r + 1)
 
         dfs(0, 0, 0)
         return ans
