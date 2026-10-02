@@ -2,29 +2,30 @@ class Solution:
     def connect(self, root: "Optional[Node]") -> "Optional[Node]":
         cur = root
 
-        while cur:
-            head = tail = None
+        while cur is not None:
+            head = None
+            tail = None
 
-            while cur:
-                left = cur.left
-                if left:
+            while cur is not None:
+                node = cur.left
+                if node is not None:
                     if head is None:
-                        head = left
+                        head = node
                     else:
-                        tail.next = left
-                    tail = left
+                        tail.next = node
+                    tail = node
 
-                right = cur.right
-                if right:
+                node = cur.right
+                if node is not None:
                     if head is None:
-                        head = right
+                        head = node
                     else:
-                        tail.next = right
-                    tail = right
+                        tail.next = node
+                    tail = node
 
                 cur = cur.next
 
-            if tail:
+            if tail is not None:
                 tail.next = None
 
             cur = head
