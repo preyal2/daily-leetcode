@@ -1,0 +1,2 @@
+<h2><a href="https://leetcode.com/problems/candy">Candy</a></h2> <img src='https://img.shields.io/badge/Difficulty-Hard-red' alt='Difficulty: Hard' /><hr><p>There are <code>n</code> children standing in a line. Each child is assigned a rating value given in the integer array <code>ratings</code>.</p>
+<p>You must give each child at least one candy. Children with a higher rating get more candies than their neighbors. Return <em>the minimum number of candies you need to distribute</em>.</p>

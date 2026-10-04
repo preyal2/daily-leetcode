@@ -4,13 +4,13 @@
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Problems Solved](https://img.shields.io/badge/Problems_Solved-225-success?style=for-the-badge)](#-complete-problem-catalog)
+[![Problems Solved](https://img.shields.io/badge/Problems_Solved-240-success?style=for-the-badge)](#-complete-problem-catalog)
 [![Automation](https://img.shields.io/badge/LeetSync-CI%2FCD_Automated-blueviolet?style=for-the-badge&logo=githubactions&logoColor=white)](#-automated-leetsync-pipeline)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)](./CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <b>A curated repository of 225+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
+  <b>A curated repository of 240+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
 </p>
 
 </div>
@@ -34,10 +34,10 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 | Difficulty Level | Problems Solved | Distribution | Status Badge |
 | :--- | :---: | :---: | :--- |
-| **🟢 Easy** | **57** | 25.3% | `![](https://img.shields.io/badge/-Easy_57-brightgreen)` |
-| **🟡 Medium** | **126** | 56.0% | `![](https://img.shields.io/badge/-Medium_126-orange)` |
-| **🔴 Hard** | **42** | 18.7% | `![](https://img.shields.io/badge/-Hard_42-red)` |
-| **🏆 Total Solved** | **225** | **100%** | `![](https://img.shields.io/badge/-225_Total-blue)` |
+| **🟢 Easy** | **57** | 23.8% | `![](https://img.shields.io/badge/-Easy_57-brightgreen)` |
+| **🟡 Medium** | **138** | 57.5% | `![](https://img.shields.io/badge/-Medium_138-orange)` |
+| **🔴 Hard** | **45** | 18.8% | `![](https://img.shields.io/badge/-Hard_45-red)` |
+| **🏆 Total Solved** | **240** | **100%** | `![](https://img.shields.io/badge/-240_Total-blue)` |
 
 </div>
 
@@ -45,18 +45,18 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 ## 🧩 Point-to-Point Algorithmic Classification Matrix
 
-The **225 solved problems** in this repository span the following core computational paradigms:
+The **240 solved problems** in this repository span the following core computational paradigms:
 
 | Algorithmic Domain | Key Underlying Principles | Representative Solved Problems |
 | :--- | :--- | :--- |
-| **⚡ Arrays, Hashing & Two Pointers** | Fast element lookup in $O(1)$, frequency counters, bidirectional inward convergence. | [#1 Two Sum](https://leetcode.com/problems/two-sum), [#11 Container With Most Water](https://leetcode.com/problems/container-with-most-water), [#15 3Sum](https://leetcode.com/problems/3sum), [#75 Sort Colors](https://leetcode.com/problems/sort-colors), [#88 Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array), [#118 Pascal's Triangle](https://leetcode.com/problems/pascals-triangle), [#119 Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii), [#122 Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii), [#125 Valid Palindrome](https://leetcode.com/problems/valid-palindrome), [#128 Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) |
+| **⚡ Arrays, Hashing & Two Pointers** | Fast element lookup in $O(1)$, frequency counters, bidirectional inward convergence. | [#1 Two Sum](https://leetcode.com/problems/two-sum), [#11 Container With Most Water](https://leetcode.com/problems/container-with-most-water), [#15 3Sum](https://leetcode.com/problems/3sum), [#75 Sort Colors](https://leetcode.com/problems/sort-colors), [#88 Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array), [#118 Pascal's Triangle](https://leetcode.com/problems/pascals-triangle), [#119 Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii), [#122 Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii), [#125 Valid Palindrome](https://leetcode.com/problems/valid-palindrome), [#128 Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence), [#153 Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) |
 | **🪟 Sliding Window & Substrings** | Dynamic subarray resizing, frequency map state tracking, character boundary optimization. | [#3 Longest Substring](https://leetcode.com/problems/longest-substring-without-repeating-characters), [#76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring), [#1208 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings), [#1298 Reverse Substrings Between Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses) |
-| **🔗 Linked Lists & Pointer Arithmetic** | Sentinel dummy heads, in-place node reversals, fast & slow tortoise-hare pointers. | [#2 Add Two Numbers](https://leetcode.com/problems/add-two-numbers), [#61 Rotate List](https://leetcode.com/problems/rotate-list), [#82 Remove Duplicates II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii), [#86 Partition List](https://leetcode.com/problems/partition-list), [#92 Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii), [#109 Sorted List to BST](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree), [#138 Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer), [#141 Linked List Cycle](https://leetcode.com/problems/linked-list-cycle), [#146 LRU Cache](https://leetcode.com/problems/lru-cache), [#206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
+| **🔗 Linked Lists & Pointer Arithmetic** | Sentinel dummy heads, in-place node reversals, fast & slow tortoise-hare pointers. | [#2 Add Two Numbers](https://leetcode.com/problems/add-two-numbers), [#61 Rotate List](https://leetcode.com/problems/rotate-list), [#82 Remove Duplicates II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii), [#86 Partition List](https://leetcode.com/problems/partition-list), [#92 Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii), [#109 Sorted List to BST](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree), [#138 Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer), [#141 Linked List Cycle](https://leetcode.com/problems/linked-list-cycle), [#142 Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii), [#143 Reorder List](https://leetcode.com/problems/reorder-list), [#146 LRU Cache](https://leetcode.com/problems/lru-cache), [#148 Sort List](https://leetcode.com/problems/sort-list), [#206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
 | **🌲 Binary Trees & Heaps** | DFS/BFS tree traversals, BST validation, min/max heap priority queues, path sums. | [#94 Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal), [#98 Validate BST](https://leetcode.com/problems/validate-binary-search-tree), [#100 Same Tree](https://leetcode.com/problems/same-tree), [#101 Symmetric Tree](https://leetcode.com/problems/symmetric-tree), [#102 Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal), [#103 Zigzag Level Order](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal), [#105 Tree from Preorder & Inorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal), [#106 Tree from Inorder & Postorder](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal), [#108 Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree), [#110 Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree), [#111 Min Depth](https://leetcode.com/problems/minimum-depth-of-binary-tree), [#112 Path Sum](https://leetcode.com/problems/path-sum), [#113 Path Sum II](https://leetcode.com/problems/path-sum-ii), [#114 Flatten Binary Tree](https://leetcode.com/problems/flatten-binary-tree-to-linked-list), [#124 Binary Tree Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum), [#129 Sum Root to Leaf](https://leetcode.com/problems/sum-root-to-leaf-numbers) |
-| **🔄 Backtracking & Recursion** | State-space exploration, branch pruning, constraint validation, combinatorial generation. | [#39 Combination Sum](https://leetcode.com/problems/combination-sum), [#46 Permutations](https://leetcode.com/problems/permutations), [#51 N-Queens](https://leetcode.com/problems/n-queens), [#77 Combinations](https://leetcode.com/problems/combinations), [#78 Subsets](https://leetcode.com/problems/subsets), [#90 Subsets II](https://leetcode.com/problems/subsets-ii), [#93 Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) |
-| **📈 Dynamic Programming** | Memoization, bottom-up tabulation, optimal substructure, DAG transitions. | [#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray), [#62 Unique Paths](https://leetcode.com/problems/unique-paths), [#64 Min Path Sum](https://leetcode.com/problems/minimum-path-sum), [#72 Edit Distance](https://leetcode.com/problems/edit-distance), [#87 Scramble String](https://leetcode.com/problems/scramble-string), [#91 Decode Ways](https://leetcode.com/problems/decode-ways), [#97 Interleaving String](https://leetcode.com/problems/interleaving-string), [#115 Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences), [#120 Triangle](https://leetcode.com/problems/triangle), [#139 Word Break](https://leetcode.com/problems/word-break), [#198 House Robber](https://leetcode.com/problems/house-robber) |
-| **🌐 Graph Theory & Grid Traversal** | Breadth-First Search (BFS), Depth-First Search (DFS), topological sort, binary lifting, grid components. | [#79 Word Search](https://leetcode.com/problems/word-search), [#130 Surrounded Regions](https://leetcode.com/problems/surrounded-regions), [#133 Clone Graph](https://leetcode.com/problems/clone-graph), [#200 Number of Islands](https://leetcode.com/problems/number-of-islands), [#2349 Valid Parentheses Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path), [#2582 Minimum Score Path](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities), [#3852 Path Existence Queries II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) |
-| **🔢 Math, Bitwise & Greedy** | Bit manipulation, Gray codes, GCD/Euclidean algorithms, modular arithmetic, greedy gas stations. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#89 Gray Code](https://leetcode.com/problems/gray-code), [#134 Gas Station](https://leetcode.com/problems/gas-station), [#136 Single Number](https://leetcode.com/problems/single-number), [#1737 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses), [#4248 Count Commas II](https://leetcode.com/problems/count-commas-in-range-ii) |
+| **🔄 Backtracking & Recursion** | State-space exploration, branch pruning, constraint validation, combinatorial generation. | [#39 Combination Sum](https://leetcode.com/problems/combination-sum), [#46 Permutations](https://leetcode.com/problems/permutations), [#51 N-Queens](https://leetcode.com/problems/n-queens), [#77 Combinations](https://leetcode.com/problems/combinations), [#78 Subsets](https://leetcode.com/problems/subsets), [#90 Subsets II](https://leetcode.com/problems/subsets-ii), [#93 Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses), [#131 Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |
+| **📈 Dynamic Programming** | Memoization, bottom-up tabulation, optimal substructure, DAG transitions. | [#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray), [#62 Unique Paths](https://leetcode.com/problems/unique-paths), [#64 Min Path Sum](https://leetcode.com/problems/minimum-path-sum), [#72 Edit Distance](https://leetcode.com/problems/edit-distance), [#87 Scramble String](https://leetcode.com/problems/scramble-string), [#91 Decode Ways](https://leetcode.com/problems/decode-ways), [#97 Interleaving String](https://leetcode.com/problems/interleaving-string), [#115 Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences), [#120 Triangle](https://leetcode.com/problems/triangle), [#123 Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii), [#139 Word Break](https://leetcode.com/problems/word-break), [#152 Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray), [#198 House Robber](https://leetcode.com/problems/house-robber) |
+| **🌐 Graph Theory & Grid Traversal** | Breadth-First Search (BFS), Depth-First Search (DFS), topological sort, binary lifting, grid components. | [#79 Word Search](https://leetcode.com/problems/word-search), [#127 Word Ladder](https://leetcode.com/problems/word-ladder), [#130 Surrounded Regions](https://leetcode.com/problems/surrounded-regions), [#133 Clone Graph](https://leetcode.com/problems/clone-graph), [#200 Number of Islands](https://leetcode.com/problems/number-of-islands), [#2349 Valid Parentheses Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path), [#2582 Minimum Score Path](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities), [#3852 Path Existence Queries II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) |
+| **🔢 Math, Bitwise, Greedy & Stacks** | Bit manipulation, Gray codes, GCD/Euclidean algorithms, monotonic stacks, greedy gas stations. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#89 Gray Code](https://leetcode.com/problems/gray-code), [#134 Gas Station](https://leetcode.com/problems/gas-station), [#135 Candy](https://leetcode.com/problems/candy), [#136 Single Number](https://leetcode.com/problems/single-number), [#137 Single Number II](https://leetcode.com/problems/single-number-ii), [#150 Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation), [#155 Min Stack](https://leetcode.com/problems/min-stack), [#1737 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses), [#4248 Count Commas II](https://leetcode.com/problems/count-commas-in-range-ii) |
 
 ---
 
@@ -103,13 +103,16 @@ daily-leetcode/
 ├── 139-word-break/
 │   ├── README.md
 │   └── word-break.py
+├── 155-min-stack/
+│   ├── README.md
+│   └── min-stack.py
 ├── CONTRIBUTING.md                            # Guidelines for community contributions
 └── README.md                                  # Complete repository documentation & catalog
 ```
 
 ---
 
-## 📝 Complete Problem Catalog (225 Solved)
+## 📝 Complete Problem Catalog (240 Solved)
 
 | # | Problem Title | Difficulty | Language | Solution File |
 | :-: | :--- | :-: | :-: | :--- |
@@ -188,7 +191,7 @@ daily-leetcode/
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`search-a-2d-matrix.py`](./74-search-a-2d-matrix/search-a-2d-matrix.py) |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sort-colors.py`](./75-sort-colors/sort-colors.py) |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`minimum-window-substring.py`](./76-minimum-window-substring/minimum-window-substring.py) |
-| 77 | [77. Combinations](https://leetcode.com/problems/combinations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`combinations.py`](./77-combinations/combinations.py) |
+| 77 | [Combinations](https://leetcode.com/problems/combinations) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`combinations.py`](./77-combinations/combinations.py) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`subsets.py`](./78-subsets/subsets.py) |
 | 79 | [Word Search](https://leetcode.com/problems/word-search) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`word-search.py`](./79-word-search/word-search.py) |
 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`remove-duplicates-from-sorted-array-ii.py`](./80-remove-duplicates-from-sorted-array-ii/remove-duplicates-from-sorted-array-ii.py) |
@@ -227,28 +230,43 @@ daily-leetcode/
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`path-sum-ii.py`](./113-path-sum-ii/path-sum-ii.py) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`flatten-binary-tree-to-linked-list.py`](./114-flatten-binary-tree-to-linked-list/flatten-binary-tree-to-linked-list.py) |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`distinct-subsequences.py`](./115-distinct-subsequences/distinct-subsequences.py) |
+| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`populating-next-right-pointers-in-each-node.py`](./116-populating-next-right-pointers-in-each-node/populating-next-right-pointers-in-each-node.py) |
+| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`populating-next-right-pointers-in-each-node-ii.py`](./117-populating-next-right-pointers-in-each-node-ii/populating-next-right-pointers-in-each-node-ii.py) |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`pascals-triangle.py`](./118-pascals-triangle/pascals-triangle.py) |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`pascals-triangle-ii.py`](./119-pascals-triangle-ii/pascals-triangle-ii.py) |
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`triangle.py`](./120-triangle/triangle.py) |
-| 121 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`best-time-to-buy-and-sell-stock.py`](./121-best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.py) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`best-time-to-buy-and-sell-stock.py`](./121-best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.py) |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`best-time-to-buy-and-sell-stock-ii.py`](./122-best-time-to-buy-and-sell-stock-ii/best-time-to-buy-and-sell-stock-ii.py) |
+| 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`best-time-to-buy-and-sell-stock-iii.py`](./123-best-time-to-buy-and-sell-stock-iii/best-time-to-buy-and-sell-stock-iii.py) |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`binary-tree-maximum-path-sum.py`](./124-binary-tree-maximum-path-sum/binary-tree-maximum-path-sum.py) |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`valid-palindrome.py`](./125-valid-palindrome/valid-palindrome.py) |
+| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`word-ladder.py`](./127-word-ladder/word-ladder.py) |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`longest-consecutive-sequence.py`](./128-longest-consecutive-sequence/longest-consecutive-sequence.py) |
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sum-root-to-leaf-numbers.py`](./129-sum-root-to-leaf-numbers/sum-root-to-leaf-numbers.py) |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`surrounded-regions.py`](./130-surrounded-regions/surrounded-regions.py) |
+| 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`palindrome-partitioning.py`](./131-palindrome-partitioning/palindrome-partitioning.py) |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`clone-graph.py`](./133-clone-graph/clone-graph.py) |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`gas-station.py`](./134-gas-station/gas-station.py) |
+| 135 | [Candy](https://leetcode.com/problems/candy) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`candy.py`](./135-candy/candy.py) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`single-number.py`](./136-single-number/single-number.py) |
+| 137 | [Single Number II](https://leetcode.com/problems/single-number-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`single-number-ii.py`](./137-single-number-ii/single-number-ii.py) |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`copy-list-with-random-pointer.py`](./138-copy-list-with-random-pointer/copy-list-with-random-pointer.py) |
 | 139 | [Word Break](https://leetcode.com/problems/word-break) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`word-break.py`](./139-word-break/word-break.py) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`linked-list-cycle.py`](./141-linked-list-cycle/linked-list-cycle.py) |
+| 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`linked-list-cycle-ii.py`](./142-linked-list-cycle-ii/linked-list-cycle-ii.py) |
+| 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`reorder-list.py`](./143-reorder-list/reorder-list.py) |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`lru-cache.py`](./146-lru-cache/lru-cache.py) |
+| 148 | [Sort List](https://leetcode.com/problems/sort-list) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`sort-list.py`](./148-sort-list/sort-list.py) |
+| 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`evaluate-reverse-polish-notation.py`](./150-evaluate-reverse-polish-notation/evaluate-reverse-polish-notation.py) |
+| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`maximum-product-subarray.py`](./152-maximum-product-subarray/maximum-product-subarray.py) |
+| 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-minimum-in-rotated-sorted-array.py`](./153-find-minimum-in-rotated-sorted-array/find-minimum-in-rotated-sorted-array.py) |
+| 155 | [Min Stack](https://leetcode.com/problems/min-stack) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`min-stack.py`](./155-min-stack/min-stack.py) |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`house-robber.py`](./198-house-robber/house-robber.py) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`number-of-islands.py`](./200-number-of-islands/number-of-islands.py) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`reverse-linked-list.py`](./206-reverse-linked-list/reverse-linked-list.py) |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`find-the-duplicate-number.py`](./287-find-the-duplicate-number/find-the-duplicate-number.py) |
 | 628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-product-of-three-numbers.py`](./628-maximum-product-of-three-numbers/maximum-product-of-three-numbers.py) |
+| 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`valid-parenthesis-string.py`](./678-valid-parenthesis-string/valid-parenthesis-string.py) |
 | 864 | [Image Overlap](https://leetcode.com/problems/image-overlap) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`image-overlap.py`](./864-image-overlap/image-overlap.py) |
 | 866 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`rectangle-overlap.py`](./866-rectangle-overlap/rectangle-overlap.py) |
 | 909 | [Stone Game](https://leetcode.com/problems/stone-game) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`stone-game.py`](./909-stone-game/stone-game.py) |
@@ -368,6 +386,21 @@ from importlib import import_module
 mod = import_module('139-word-break.word-break')
 sol = mod.Solution()
 print('Word Break:', sol.wordBreak('leetcode', ['leet', 'code']))
+"
+
+# Example 3: Run LeetCode 155 Min Stack
+python -c "
+from importlib import import_module
+mod = import_module('155-min-stack.min-stack')
+MinStack = mod.MinStack
+st = MinStack()
+st.push(-2)
+st.push(0)
+st.push(-3)
+print('Min Stack getMin():', st.getMin())
+st.pop()
+print('Top:', st.top())
+print('Min Stack getMin():', st.getMin())
 "
 ```
 
