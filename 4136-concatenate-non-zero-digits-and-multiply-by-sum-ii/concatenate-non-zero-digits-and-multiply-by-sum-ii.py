@@ -1,41 +1,59 @@
-MOD = 10**9 + 7
-MX = 100001
-
-POW10 = [1] * MX
-for i in range(1, MX):
-    POW10[i] = (POW10[i - 1] * 10) % MOD
+MOD = 1_000_000_007
 
 
 class Solution:
-    def sumAndMultiply(self, s: str, queries: List[List[int]]) -> List[int]:
-        n = len(s)
+    def sumAndMultiply(
+        self, s: str, queries: List[List[int]]
+    ) -> List[int]:
 
-        sum_d = [0] * (n + 1)
-        cnt = [0] * (n + 1)
+        n = len(s)
+        mod = MOD
+
+        # Prefix:
+        # sd[i]   = sum of digits in s[:i]
+        # nz[i]   = number of non-zero digits in s[:i]
+        # pref[i] = number formed by non-zero digits in s[:i]
+        sd = [0] * (n + 1)
+        nz = [0] * (n + 1)
         pref = [0] * (n + 1)
 
-        mod = MOD
-        pow10 = POW10
+        total_sum = 0
+        nonzero = 0
+        value = 0
 
-        for i in range(n):
-            d = ord(s[i]) - 48
+        for i, c in enumerate(s, 1):
+            d = ord(c) - 48
 
-            sum_d[i + 1] = sum_d[i] + d
-            cnt[i + 1] = cnt[i] + (d != 0)
+            total_sum += d
+            sd[i] = total_sum
 
             if d:
-                pref[i + 1] = (pref[i] * 10 + d) % mod
-            else:
-                pref[i + 1] = pref[i]
+                nonzero += 1
+                value = (value * 10 + d) % mod
+
+            nz[i] = nonzero
+            pref[i] = value
+
+        # Only calculate powers actually needed.
+        pow10 = [1] * (nonzero + 1)
+        p = 1
+        for i in range(1, nonzero + 1):
+            p = p * 10 % mod
+            pow10[i] = p
 
         ans = []
         append = ans.append
 
         for l, r in queries:
-            nz = cnt[r + 1] - cnt[l]
-            digit_sum = sum_d[r + 1] - sum_d[l]
+            rr = r + 1
 
-            val = pref[r + 1] - pref[l] * pow10[nz] % mod
-            append((val % mod) * digit_sum % mod)
+            count = nz[rr] - nz[l]
+            digit_sum = sd[rr] - sd[l]
+
+            value = pref[rr] - pref[l] * pow10[count] % mod
+
+            # No need for (value % mod) here.
+            # Final modulo already normalizes negative values.
+            append(value * digit_sum % mod)
 
         return ans
