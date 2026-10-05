@@ -1,59 +1,53 @@
-MOD = 1_000_000_007
+MOD = 1000000007
 
 
 class Solution:
-    def sumAndMultiply(
-        self, s: str, queries: List[List[int]]
-    ) -> List[int]:
-
+    def sumAndMultiply(self, s: str, queries: List[List[int]]) -> List[int]:
         n = len(s)
-        mod = MOD
 
-        # Prefix:
-        # sd[i]   = sum of digits in s[:i]
-        # nz[i]   = number of non-zero digits in s[:i]
-        # pref[i] = number formed by non-zero digits in s[:i]
         sd = [0] * (n + 1)
         nz = [0] * (n + 1)
         pref = [0] * (n + 1)
 
-        total_sum = 0
-        nonzero = 0
-        value = 0
+        sm = nonzero = value = 0
 
-        for i, c in enumerate(s, 1):
-            d = ord(c) - 48
-
-            total_sum += d
-            sd[i] = total_sum
+        # bytes iteration is cheaper than ord() for every character
+        for i, d in enumerate(s.encode(), 1):
+            d -= 48
+            sm += d
+            sd[i] = sm
 
             if d:
                 nonzero += 1
-                value = (value * 10 + d) % mod
+                value = (value * 10 + d) % MOD
 
             nz[i] = nonzero
             pref[i] = value
 
-        # Only calculate powers actually needed.
+        # Only powers that can actually be requested are needed.
         pow10 = [1] * (nonzero + 1)
         p = 1
         for i in range(1, nonzero + 1):
-            p = p * 10 % mod
+            p = p * 10 % MOD
             pow10[i] = p
 
-        ans = []
-        append = ans.append
+        q = len(queries)
+        ans = [0] * q
 
-        for l, r in queries:
+        _sd = sd
+        _nz = nz
+        _pref = pref
+        _pow10 = pow10
+        mod = MOD
+
+        for i in range(q):
+            l, r = queries[i]
             rr = r + 1
 
-            count = nz[rr] - nz[l]
-            digit_sum = sd[rr] - sd[l]
+            c = _nz[rr] - _nz[l]
+            sm = _sd[rr] - _sd[l]
+            v = _pref[rr] - _pref[l] * _pow10[c] % mod
 
-            value = pref[rr] - pref[l] * pow10[count] % mod
-
-            # No need for (value % mod) here.
-            # Final modulo already normalizes negative values.
-            append(value * digit_sum % mod)
+            ans[i] = v * sm % mod
 
         return ans
