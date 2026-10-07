@@ -1,28 +1,62 @@
 class Solution:
     def removeInvalidParentheses(self, s: str) -> List[str]:
-        def dfs(i, l, r, lcnt, rcnt, t):
-            if i == n:
-                if l == 0 and r == 0:
-                    ans.add(t)
-                return
-            if n - i < l + r or lcnt < rcnt:
-                return
-            if s[i] == '(' and l:
-                dfs(i + 1, l - 1, r, lcnt, rcnt, t)
-            elif s[i] == ')' and r:
-                dfs(i + 1, l, r - 1, lcnt, rcnt, t)
-            dfs(i + 1, l, r, lcnt + (s[i] == '('), rcnt + (s[i] == ')'), t + s[i])
+        n = len(s)
 
-        l = r = 0
+        # Count minimum removals needed.
+        lrem = rrem = 0
+        balance = 0
+
         for c in s:
             if c == '(':
-                l += 1
+                balance += 1
             elif c == ')':
-                if l:
-                    l -= 1
+                if balance:
+                    balance -= 1
                 else:
-                    r += 1
+                    rrem += 1
+
+        lrem = balance
+
         ans = set()
-        n = len(s)
-        dfs(0, l, r, 0, 0, '')
+        path = []
+
+        def dfs(i, bal, left, right):
+            if n - i < left + right:
+                return
+
+            if i == n:
+                if left == 0 and right == 0 and bal == 0:
+                    ans.add(''.join(path))
+                return
+
+            c = s[i]
+
+            if c == '(':
+                # Remove '('
+                if left:
+                    dfs(i + 1, bal, left - 1, right)
+
+                # Keep '('
+                path.append(c)
+                dfs(i + 1, bal + 1, left, right)
+                path.pop()
+
+            elif c == ')':
+                # Remove ')'
+                if right:
+                    dfs(i + 1, bal, left, right - 1)
+
+                # Keep ')' only when it has a matching '('
+                if bal:
+                    path.append(c)
+                    dfs(i + 1, bal - 1, left, right)
+                    path.pop()
+
+            else:
+                # Keep non-parenthesis characters.
+                path.append(c)
+                dfs(i + 1, bal, left, right)
+                path.pop()
+
+        dfs(0, 0, lrem, rrem)
         return list(ans)
