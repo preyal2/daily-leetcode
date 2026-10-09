@@ -4,13 +4,13 @@
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Problems Solved](https://img.shields.io/badge/Problems_Solved-244-success?style=for-the-badge)](#-complete-problem-catalog)
+[![Problems Solved](https://img.shields.io/badge/Problems_Solved-245-success?style=for-the-badge)](#-complete-problem-catalog)
 [![Automation](https://img.shields.io/badge/LeetSync-CI%2FCD_Automated-blueviolet?style=for-the-badge&logo=githubactions&logoColor=white)](#-automated-leetsync-pipeline)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)](./CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <b>A curated repository of 244+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
+  <b>A curated repository of 245+ daily LeetCode solutions engineered with Python 3.12, strict Big-O complexity proofs, top-percentile runtime optimizations, and automated LeetSync synchronization.</b>
 </p>
 
 </div>
@@ -34,10 +34,10 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 | Difficulty Level | Problems Solved | Distribution | Status Badge |
 | :--- | :---: | :---: | :--- |
-| **🟢 Easy** | **58** | 23.8% | `![](https://img.shields.io/badge/-Easy_58-brightgreen)` |
-| **🟡 Medium** | **140** | 57.4% | `![](https://img.shields.io/badge/-Medium_140-orange)` |
-| **🔴 Hard** | **46** | 18.9% | `![](https://img.shields.io/badge/-Hard_46-red)` |
-| **🏆 Total Solved** | **244** | **100%** | `![](https://img.shields.io/badge/-244_Total-blue)` |
+| **🟢 Easy** | **58** | 23.7% | `![](https://img.shields.io/badge/-Easy_58-brightgreen)` |
+| **🟡 Medium** | **141** | 57.6% | `![](https://img.shields.io/badge/-Medium_141-orange)` |
+| **🔴 Hard** | **46** | 18.8% | `![](https://img.shields.io/badge/-Hard_46-red)` |
+| **🏆 Total Solved** | **245** | **100%** | `![](https://img.shields.io/badge/-245_Total-blue)` |
 
 </div>
 
@@ -45,7 +45,7 @@ This repository serves as a systematic, continuous algorithmic practice vault de
 
 ## 🧩 Point-to-Point Algorithmic Classification Matrix
 
-The **244 solved problems** in this repository span the following core computational paradigms:
+The **245 solved problems** in this repository span the following core computational paradigms:
 
 | Algorithmic Domain | Key Underlying Principles | Representative Solved Problems |
 | :--- | :--- | :--- |
@@ -56,7 +56,7 @@ The **244 solved problems** in this repository span the following core computati
 | **🔄 Backtracking & Recursion** | State-space exploration, branch pruning, constraint validation, combinatorial generation. | [#39 Combination Sum](https://leetcode.com/problems/combination-sum), [#46 Permutations](https://leetcode.com/problems/permutations), [#51 N-Queens](https://leetcode.com/problems/n-queens), [#77 Combinations](https://leetcode.com/problems/combinations), [#78 Subsets](https://leetcode.com/problems/subsets), [#90 Subsets II](https://leetcode.com/problems/subsets-ii), [#93 Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses), [#131 Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning), [#301 Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) |
 | **📈 Dynamic Programming** | Memoization, bottom-up tabulation, optimal substructure, DAG transitions. | [#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray), [#62 Unique Paths](https://leetcode.com/problems/unique-paths), [#64 Min Path Sum](https://leetcode.com/problems/minimum-path-sum), [#72 Edit Distance](https://leetcode.com/problems/edit-distance), [#87 Scramble String](https://leetcode.com/problems/scramble-string), [#91 Decode Ways](https://leetcode.com/problems/decode-ways), [#97 Interleaving String](https://leetcode.com/problems/interleaving-string), [#115 Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences), [#120 Triangle](https://leetcode.com/problems/triangle), [#123 Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii), [#139 Word Break](https://leetcode.com/problems/word-break), [#152 Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray), [#198 House Robber](https://leetcode.com/problems/house-robber) |
 | **🌐 Graph Theory & Grid Traversal** | Breadth-First Search (BFS), Depth-First Search (DFS), topological sort, binary lifting, grid components. | [#79 Word Search](https://leetcode.com/problems/word-search), [#127 Word Ladder](https://leetcode.com/problems/word-ladder), [#130 Surrounded Regions](https://leetcode.com/problems/surrounded-regions), [#133 Clone Graph](https://leetcode.com/problems/clone-graph), [#200 Number of Islands](https://leetcode.com/problems/number-of-islands), [#2349 Valid Parentheses Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path), [#2582 Minimum Score Path](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities), [#3852 Path Existence Queries II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii) |
-| **🔢 Math, Bitwise, Stacks & Parentheses** | Monotonic stacks, bitwise FSM, parenthesis matching, Gray codes, greedy gas stations. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#20 Valid Parentheses](https://leetcode.com/problems/valid-parentheses), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#89 Gray Code](https://leetcode.com/problems/gray-code), [#134 Gas Station](https://leetcode.com/problems/gas-station), [#135 Candy](https://leetcode.com/problems/candy), [#136 Single Number](https://leetcode.com/problems/single-number), [#137 Single Number II](https://leetcode.com/problems/single-number-ii), [#150 Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation), [#155 Min Stack](https://leetcode.com/problems/min-stack), [#886 Score of Parentheses](https://leetcode.com/problems/score-of-parentheses), [#957 Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid), [#1078 Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses), [#1737 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses), [#4248 Count Commas II](https://leetcode.com/problems/count-commas-in-range-ii) |
+| **🔢 Math, Bitwise, Stacks & Parentheses** | Monotonic stacks, bitwise FSM, parenthesis matching, Gray codes, greedy balance. | [#7 Reverse Integer](https://leetcode.com/problems/reverse-integer), [#20 Valid Parentheses](https://leetcode.com/problems/valid-parentheses), [#43 Multiply Strings](https://leetcode.com/problems/multiply-strings), [#67 Add Binary](https://leetcode.com/problems/add-binary), [#89 Gray Code](https://leetcode.com/problems/gray-code), [#134 Gas Station](https://leetcode.com/problems/gas-station), [#135 Candy](https://leetcode.com/problems/candy), [#136 Single Number](https://leetcode.com/problems/single-number), [#137 Single Number II](https://leetcode.com/problems/single-number-ii), [#150 Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation), [#155 Min Stack](https://leetcode.com/problems/min-stack), [#886 Score of Parentheses](https://leetcode.com/problems/score-of-parentheses), [#957 Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid), [#1078 Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses), [#1648 Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string), [#1737 Max Nesting Depth](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses), [#4248 Count Commas II](https://leetcode.com/problems/count-commas-in-range-ii) |
 
 ---
 
@@ -118,13 +118,16 @@ daily-leetcode/
 ├── 1078-remove-outermost-parentheses/
 │   ├── README.md
 │   └── remove-outermost-parentheses.py
+├── 1648-minimum-insertions-to-balance-a-parentheses-string/
+│   ├── README.md
+│   └── minimum-insertions-to-balance-a-parentheses-string.py
 ├── CONTRIBUTING.md                            # Guidelines for community contributions
 └── README.md                                  # Complete repository documentation & catalog
 ```
 
 ---
 
-## 📝 Complete Problem Catalog (244 Solved)
+## 📝 Complete Problem Catalog (245 Solved)
 
 | # | Problem Title | Difficulty | Language | Solution File |
 | :-: | :--- | :-: | :-: | :--- |
@@ -302,6 +305,7 @@ daily-leetcode/
 | 1574 | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-product-of-two-elements-in-an-array.py`](./1574-maximum-product-of-two-elements-in-an-array/maximum-product-of-two-elements-in-an-array.py) |
 | 1617 | [Stone Game IV](https://leetcode.com/problems/stone-game-iv) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-iv.py`](./1617-stone-game-iv/stone-game-iv.py) |
 | 1644 | [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`maximum-number-of-non-overlapping-substrings.py`](./1644-maximum-number-of-non-overlapping-substrings/maximum-number-of-non-overlapping-substrings.py) |
+| 1648 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`minimum-insertions-to-balance-a-parentheses-string.py`](./1648-minimum-insertions-to-balance-a-parentheses-string/minimum-insertions-to-balance-a-parentheses-string.py) |
 | 1685 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | ![Hard](https://img.shields.io/badge/Hard-red) | Python 3.12 | [`stone-game-v.py`](./1685-stone-game-v/stone-game-v.py) |
 | 1725 | [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments) | ![Medium](https://img.shields.io/badge/Medium-orange) | Python 3.12 | [`number-of-sets-of-k-non-overlapping-line-segments.py`](./1725-number-of-sets-of-k-non-overlapping-line-segments/number-of-sets-of-k-non-overlapping-line-segments.py) |
 | 1737 | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | Python 3.12 | [`maximum-nesting-depth-of-the-parentheses.py`](./1737-maximum-nesting-depth-of-the-parentheses/maximum-nesting-depth-of-the-parentheses.py) |
@@ -411,12 +415,12 @@ print('Top:', st.top())
 print('Min Stack getMin():', st.getMin())
 "
 
-# Example 3: Run LeetCode 957 (921) Minimum Add to Make Parentheses Valid
+# Example 3: Run LeetCode 1648 (1541) Minimum Insertions to Balance a Parentheses String
 python -c "
 from importlib import import_module
-mod = import_module('957-minimum-add-to-make-parentheses-valid.minimum-add-to-make-parentheses-valid')
+mod = import_module('1648-minimum-insertions-to-balance-a-parentheses-string.minimum-insertions-to-balance-a-parentheses-string')
 sol = mod.Solution()
-print('Min Add required:', sol.minAddToMakeValid('())'))
+print('Min Insertions required:', sol.minInsertions('(()))'))
 "
 ```
 
