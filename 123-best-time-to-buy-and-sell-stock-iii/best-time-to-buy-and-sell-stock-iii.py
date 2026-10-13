@@ -1,20 +1,10 @@
 class Solution:
-    def maxProfit(self, prices: list[int]) -> int:
-        """
-        State machine dynamic programming tracking max profit through at most 2 buy-sell transactions.
-
-        Time Complexity: O(N) single-pass iteration through prices.
-        Space Complexity: O(1) constant auxiliary memory using 4 state variables.
-        """
-        buy1 = float('-inf')
-        sell1 = 0
-        buy2 = float('-inf')
-        sell2 = 0
-
-        for price in prices:
-            buy1 = max(buy1, -price)
-            sell1 = max(sell1, buy1 + price)
-            buy2 = max(buy2, sell1 - price)
-            sell2 = max(sell2, buy2 + price)
-
-        return sell2
+    def maxProfit(self, prices: List[int]) -> int:
+        # 第一次买入，第一次卖出，第二次买入，第二次卖出
+        f1, f2, f3, f4 = -prices[0], 0, -prices[0], 0
+        for price in prices[1:]:
+            f1 = max(f1, -price)
+            f2 = max(f2, f1 + price)
+            f3 = max(f3, f2 - price)
+            f4 = max(f4, f3 + price)
+        return f4
