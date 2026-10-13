@@ -1,23 +1,13 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        """
-        In-place bidirectional two-pointer verification of alphanumeric palindrome.
-
-        Time Complexity: O(N) single pass traversing string s.
-        Space Complexity: O(1) auxiliary space without extra strings.
-        """
-        left, right = 0, len(s) - 1
-
-        while left < right:
-            while left < right and not s[left].isalnum():
-                left += 1
-            while left < right and not s[right].isalnum():
-                right -= 1
-
-            if s[left].lower() != s[right].lower():
+        i, j = 0, len(s) - 1
+        while i < j:
+            if not s[i].isalnum():
+                i += 1
+            elif not s[j].isalnum():
+                j -= 1
+            elif s[i].lower() != s[j].lower():
                 return False
-
-            left += 1
-            right -= 1
-
+            else:
+                i, j = i + 1, j - 1
         return True
