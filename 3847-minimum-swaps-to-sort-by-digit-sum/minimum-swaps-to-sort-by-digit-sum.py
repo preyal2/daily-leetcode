@@ -1,21 +1,31 @@
 class Solution:
-  def minSwaps(self, nums: list[int]) -> int:
-    ans = 0
-    seen = set()
-    sortedNums = sorted(nums, key=lambda x: (self._getDigitSum(x), x))
-    numToIndex = {num: i for i, num in enumerate(sortedNums)}
+    def minSwaps(self, nums: list[int]) -> int:
+        def digit_sum(x):
+            total = 0
+            while x:
+                total += x % 10
+                x //= 10
+            return total
 
-    for i, num in enumerate(nums):
-      if i in seen or numToIndex[num] == i:
-        continue
-      cycleSize = 0
-      j = i
-      while j not in seen:
-        seen.add(j)
-        j = numToIndex[nums[j]]
-        cycleSize += 1
-      ans += max(cycleSize - 1, 0)
-    return ans
+        n = len(nums)
+        order = sorted((digit_sum(x), x) for x in nums)
+        target = {num: i for i, (_, num) in enumerate(order)}
 
-  def _getDigitSum(self, num: int) -> int:
-    return sum(int(digit) for digit in str(num))
+        seen = [False] * n
+        ans = 0
+
+        for i, num in enumerate(nums):
+            if seen[i] or target[num] == i:
+                continue
+
+            cycle = 0
+            j = i
+
+            while not seen[j]:
+                seen[j] = True
+                j = target[nums[j]]
+                cycle += 1
+
+            ans += cycle - 1
+
+        return ans
