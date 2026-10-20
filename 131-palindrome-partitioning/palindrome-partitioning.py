@@ -1,33 +1,21 @@
 class Solution:
-    def partition(self, s: str) -> list[list[str]]:
-        """
-        Backtracking with memoized palindrome validation for all valid partition cuts.
-
-        Time Complexity: O(N * 2^N) in worst case generating partitions of length N.
-        Space Complexity: O(N) recursion call stack depth.
-        """
-        result = []
-        path = []
-        n = len(s)
-
-        def is_palindrome(left: int, right: int) -> bool:
-            while left < right:
-                if s[left] != s[right]:
-                    return False
-                left += 1
-                right -= 1
-            return True
-
-        def backtrack(start: int):
-            if start == n:
-                result.append(path[:])
+    def partition(self, s: str) -> List[List[str]]:
+        def dfs(i: int):
+            if i == n:
+                ans.append(t[:])
                 return
+            for j in range(i, n):
+                if f[i][j]:
+                    t.append(s[i : j + 1])
+                    dfs(j + 1)
+                    t.pop()
 
-            for end in range(start, n):
-                if is_palindrome(start, end):
-                    path.append(s[start:end+1])
-                    backtrack(end + 1)
-                    path.pop()
-
-        backtrack(0)
-        return result
+        n = len(s)
+        f = [[True] * n for _ in range(n)]
+        for i in range(n - 1, -1, -1):
+            for j in range(i + 1, n):
+                f[i][j] = s[i] == s[j] and f[i + 1][j - 1]
+        ans = []
+        t = []
+        dfs(0)
+        return ans
