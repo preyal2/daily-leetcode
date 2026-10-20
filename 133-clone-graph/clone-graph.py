@@ -1,33 +1,26 @@
-from typing import Optional
-
+"""
+# Definition for a Node.
 class Node:
     def __init__(self, val = 0, neighbors = None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
+"""
+
+from typing import Optional
+
 
 class Solution:
-    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        """
-        Deep clone of undirected graph using DFS and visited clone map.
+    def cloneGraph(self, node: Optional["Node"]) -> Optional["Node"]:
+        def dfs(node):
+            if node is None:
+                return None
+            if node in g:
+                return g[node]
+            cloned = Node(node.val)
+            g[node] = cloned
+            for nxt in node.neighbors:
+                cloned.neighbors.append(dfs(nxt))
+            return cloned
 
-        Time Complexity: O(V + E) where V is vertices and E is edges.
-        Space Complexity: O(V) for visited hash map and recursion stack.
-        """
-        if not node:
-            return None
-
-        visited = {}
-
-        def dfs(curr: 'Node') -> 'Node':
-            if curr in visited:
-                return visited[curr]
-
-            clone = Node(curr.val)
-            visited[curr] = clone
-
-            for neighbor in curr.neighbors:
-                clone.neighbors.append(dfs(neighbor))
-
-            return clone
-
+        g = defaultdict()
         return dfs(node)
