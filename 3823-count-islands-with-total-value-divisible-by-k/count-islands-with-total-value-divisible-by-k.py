@@ -1,19 +1,49 @@
 class Solution:
     def countIslands(self, grid: List[List[int]], k: int) -> int:
-        def dfs(i: int, j: int) -> int:
-            s = grid[i][j]
-            grid[i][j] = 0
-            for a, b in pairwise(dirs):
-                x, y = i + a, j + b
-                if 0 <= x < m and 0 <= y < n and grid[x][y]:
-                    s += dfs(x, y)
-            return s
-
         m, n = len(grid), len(grid[0])
-        dirs = (-1, 0, 1, 0, -1)
         ans = 0
+
         for i in range(m):
             for j in range(n):
-                if grid[i][j] and dfs(i, j) % k == 0:
+                total = grid[i][j]
+                if total == 0:
+                    continue
+
+                grid[i][j] = 0
+                stack = [(i, j)]
+
+                while stack:
+                    x, y = stack.pop()
+
+                    if x > 0:
+                        v = grid[x - 1][y]
+                        if v:
+                            total += v
+                            grid[x - 1][y] = 0
+                            stack.append((x - 1, y))
+
+                    if x + 1 < m:
+                        v = grid[x + 1][y]
+                        if v:
+                            total += v
+                            grid[x + 1][y] = 0
+                            stack.append((x + 1, y))
+
+                    if y > 0:
+                        v = grid[x][y - 1]
+                        if v:
+                            total += v
+                            grid[x][y - 1] = 0
+                            stack.append((x, y - 1))
+
+                    if y + 1 < n:
+                        v = grid[x][y + 1]
+                        if v:
+                            total += v
+                            grid[x][y + 1] = 0
+                            stack.append((x, y + 1))
+
+                if total % k == 0:
                     ans += 1
+
         return ans
