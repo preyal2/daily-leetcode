@@ -8,87 +8,95 @@ class Solution:
         if k == 0:
             return 0
 
+        INF = (1 << 62) - 1
+
+        if k * x > n:
+            return INF
+
         # Coordinate compression
         vals = sorted(set(nums))
-        rank = {v: i + 1 for i, v in enumerate(vals)}
         size = len(vals)
+        rank = {v: i + 1 for i, v in enumerate(vals)}
+        ids = [rank[v] for v in nums]
 
-        # Fenwick trees for frequencies and sums
-        bit_count = [0] * (size + 1)
-        bit_sum = [0] * (size + 1)
+        # Fenwick trees
+        bc = [0] * (size + 1)
+        bs = [0] * (size + 1)
 
-        def update(i, dc, ds):
-            while i <= size:
-                bit_count[i] += dc
-                bit_sum[i] += ds
-                i += i & -i
+        add_count = bc
+        add_sum = bs
 
-        def prefix(i):
-            count = total = 0
-            while i:
-                count += bit_count[i]
-                total += bit_sum[i]
-                i -= i & -i
-            return count, total
-
-        # Find the zero-based compressed index of kth smallest.
-        def kth_smallest(kth):
-            idx = 0
-            step = 1 << (size.bit_length() - 1)
-
-            while step:
-                nxt = idx + step
-                if nxt <= size and bit_count[nxt] < kth:
-                    idx = nxt
-                    kth -= bit_count[nxt]
-                step >>= 1
-
-            return idx
-
-        # Calculate minimum cost for every window of size x.
-        min_ops = []
+        # Sliding window median costs
+        costs = []
         window_sum = 0
-        median_rank = (x + 1) // 2
+        median_rank = (x + 1) >> 1
+        top = 1 << (size.bit_length() - 1)
 
         for i, v in enumerate(nums):
-            update(rank[v], 1, v)
+            p = ids[i]
+
+            while p <= size:
+                add_count[p] += 1
+                add_sum[p] += v
+                p += p & -p
+
             window_sum += v
 
             if i >= x:
                 old = nums[i - x]
-                update(rank[old], -1, -old)
+                p = ids[i - x]
+
                 window_sum -= old
 
+                while p <= size:
+                    add_count[p] -= 1
+                    add_sum[p] -= old
+                    p += p & -p
+
             if i >= x - 1:
-                mid_idx = kth_smallest(median_rank)
-                median = vals[mid_idx]
+                # Find median and sum of the smallest median_rank values.
+                idx = 0
+                need = median_rank
+                lower_sum = 0
+                step = top
 
-                lower_count, lower_sum = prefix(mid_idx + 1)
+                while step:
+                    nxt = idx + step
 
-                upper_count = x - lower_count
+                    if nxt <= size and bc[nxt] < need:
+                        need -= bc[nxt]
+                        lower_sum += bs[nxt]
+                        idx = nxt
+
+                    step >>= 1
+
+                median = vals[idx]
+                lower_sum += median * need
+
                 upper_sum = window_sum - lower_sum
+                upper_count = x - median_rank
 
                 cost = (
-                    median * lower_count - lower_sum
+                    median * median_rank - lower_sum
                     + upper_sum - median * upper_count
                 )
 
-                min_ops.append(cost)
+                costs.append(cost)
 
-        # DP: minimum cost to select exactly j non-overlapping windows.
-        INF = 10**30
-
+        # DP with two reusable arrays.
         prev = [0] * (n + 1)
+        curr = [INF] * (n + 1)
 
         for j in range(1, k + 1):
-            curr = [INF] * (n + 1)
+            limit = n - j * x
+            curr[limit + 1] = INF
 
-            for end in range(x, n + 1):
-                skip = curr[end - 1]
-                pick = prev[end - x] + min_ops[end - x]
+            for i in range(limit, -1, -1):
+                skip = curr[i + 1]
+                pick = costs[i] + prev[i + x]
 
-                curr[end] = skip if skip < pick else pick
+                curr[i] = pick if pick < skip else skip
 
-            prev = curr
+            prev, curr = curr, prev
 
-        return prev[n]
+        return prev[0]
