@@ -1,25 +1,41 @@
 class Solution:
-  def countNonDecreasingSubarrays(self, nums: list[int], k: int) -> int:
-    ans = 0
-    cost = 0
-    # Store (number, count) pairs in non-increasing order. The numbers in the
-    # queue represent what nums[i..j] look like after adjustments.
-    dq = collections.deque()
+    def countNonDecreasingSubarrays(self, nums: list[int], k: int) -> int:
+        n = len(nums)
+        ans = cost = 0
+        j = n - 1
 
-    j = len(nums) - 1
-    for i, num in reversed(list(enumerate(nums))):
-      count = 1
-      while dq and dq[-1][0] < num:
-        nextNum, nextCount = dq.pop()
-        count += nextCount
-        cost += (num - nextNum) * nextCount  # Adjust `nextNum`s to `num`.
-      dq.append((num, count))
-      while cost > k:  # Remove the rightmost number.
-        rightmostNum, rightmostCount = dq.popleft()
-        cost -= (rightmostNum - nums[j])
-        j -= 1
-        if rightmostCount > 1:
-          dq.appendleft((rightmostNum, rightmostCount - 1))
-      ans += j - i + 1
+        qv = []
+        qc = []
+        head = tail = 0
 
-    return ans
+        for i in range(n - 1, -1, -1):
+            num = nums[i]
+            count = 1
+
+            while tail > head and qv[tail - 1] < num:
+                tail -= 1
+                v = qv.pop()
+                c = qc.pop()
+
+                count += c
+                cost += (num - v) * c
+
+            qv.append(num)
+            qc.append(count)
+            tail += 1
+
+            while cost > k:
+                v = qv[head]
+                c = qc[head]
+
+                cost -= v - nums[j]
+                j -= 1
+
+                if c > 1:
+                    qc[head] = c - 1
+                else:
+                    head += 1
+
+            ans += j - i + 1
+
+        return ans
