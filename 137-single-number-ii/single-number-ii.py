@@ -1,16 +1,11 @@
 class Solution:
     def singleNumber(self, nums: list[int]) -> int:
-        """
-        Bitwise state machine tracking modulo-3 occurrences with two state bitmasks.
-
-        Time Complexity: O(N) single pass over nums.
-        Space Complexity: O(1) constant auxiliary storage.
-        """
-        ones = 0
-        twos = 0
-
-        for num in nums:
-            ones = (ones ^ num) & ~twos
-            twos = (twos ^ num) & ~ones
-
-        return ones
+        ans = 0
+        for i in range(32):
+            cnt = sum(num >> i & 1 for num in nums)
+            if cnt % 3:
+                if i == 31:
+                    ans -= 1 << i
+                else:
+                    ans |= 1 << i
+        return ans
