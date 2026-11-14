@@ -1,44 +1,28 @@
-from typing import Optional
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        """
-        Merge sort on linked list running in O(N log N) time and O(log N) stack space.
-
-        Time Complexity: O(N log N) divide-and-conquer sorting.
-        Space Complexity: O(log N) recursion call stack depth.
-        """
-        if not head or not head.next:
+        if head is None or head.next is None:
             return head
-
-        # Find midpoint
         slow, fast = head, head.next
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-
-        mid = slow.next
+        l1, l2 = head, slow.next
         slow.next = None
-
-        left = self.sortList(head)
-        right = self.sortList(mid)
-
-        # Merge two sorted sublists
-        dummy = ListNode(0)
-        curr = dummy
-        while left and right:
-            if left.val <= right.val:
-                curr.next = left
-                left = left.next
+        l1, l2 = self.sortList(l1), self.sortList(l2)
+        dummy = ListNode()
+        tail = dummy
+        while l1 and l2:
+            if l1.val <= l2.val:
+                tail.next = l1
+                l1 = l1.next
             else:
-                curr.next = right
-                right = right.next
-            curr = curr.next
-
-        curr.next = left if left else right
+                tail.next = l2
+                l2 = l2.next
+            tail = tail.next
+        tail.next = l1 or l2
         return dummy.next
