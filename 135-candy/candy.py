@@ -1,12 +1,34 @@
 class Solution:
     def candy(self, ratings: list[int]) -> int:
-        n = len(ratings)
-        left = [1] * n
-        right = [1] * n
-        for i in range(1, n):
+        ans = 1
+        up = down = 0
+        prev = 0
+
+        for i in range(1, len(ratings)):
             if ratings[i] > ratings[i - 1]:
-                left[i] = left[i - 1] + 1
-        for i in range(n - 2, -1, -1):
-            if ratings[i] > ratings[i + 1]:
-                right[i] = right[i + 1] + 1
-        return sum(max(a, b) for a, b in zip(left, right))
+                slope = 1
+            elif ratings[i] < ratings[i - 1]:
+                slope = -1
+            else:
+                slope = 0
+
+            if (prev > 0 and slope == 0) or (prev < 0 and slope >= 0):
+                ans += up * (up + 1) // 2
+                ans += down * (down + 1) // 2
+                ans += max(up, down)
+                up = down = 0
+
+            if slope > 0:
+                up += 1
+            elif slope < 0:
+                down += 1
+            else:
+                ans += 1
+
+            prev = slope
+
+        ans += up * (up + 1) // 2
+        ans += down * (down + 1) // 2
+        ans += max(up, down)
+
+        return ans
