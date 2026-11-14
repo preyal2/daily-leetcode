@@ -1,11 +1,9 @@
 class Solution:
     def singleNumber(self, nums: list[int]) -> int:
-        ans = 0
-        for i in range(32):
-            cnt = sum(num >> i & 1 for num in nums)
-            if cnt % 3:
-                if i == 31:
-                    ans -= 1 << i
-                else:
-                    ans |= 1 << i
-        return ans
+        ones = twos = 0
+
+        for x in nums:
+            ones = (ones ^ x) & ~twos
+            twos = (twos ^ x) & ~ones
+
+        return ones
