@@ -1,25 +1,60 @@
 class Solution:
     def minimumChanges(self, s: str, k: int) -> int:
         n = len(s)
-        g = [[inf] * (n + 1) for _ in range(n + 1)]
-        for i in range(1, n + 1):
-            for j in range(i, n + 1):
-                m = j - i + 1
-                for d in range(1, m):
-                    if m % d == 0:
-                        cnt = 0
-                        for l in range(m):
-                            r = (m // d - 1 - l // d) * d + l % d
-                            if l >= r:
-                                break
-                            if s[i - 1 + l] != s[i - 1 + r]:
-                                cnt += 1
-                        g[i][j] = min(g[i][j], cnt)
+        INF = 10**9
 
-        f = [[inf] * (k + 1) for _ in range(n + 1)]
-        f[0][0] = 0
-        for i in range(1, n + 1):
-            for j in range(1, k + 1):
-                for h in range(i - 1):
-                    f[i][j] = min(f[i][j], f[h][j - 1] + g[h + 1][i])
-        return f[n][k]
+        # Precompute minimum semi-palindrome cost.
+        g = [[INF] * (n + 1) for _ in range(n)]
+
+        for d in range(1, n // 2 + 1):
+            prev2 = [0] * (n + 1)
+            prev1 = [0] * (n + 1)
+
+            for q in range(2, n // d + 1):
+                length = q * d
+                limit = n - length + 1
+                offset = (q - 1) * d
+
+                cur = [0] * limit
+
+                for i in range(limit):
+                    cost = prev2[i + d]
+
+                    a = i
+                    b = i + offset
+
+                    for _ in range(d):
+                        cost += s[a] != s[b]
+                        a += 1
+                        b += 1
+
+                    cur[i] = cost
+
+                    end = i + length
+                    if cost < g[i][end]:
+                        g[i][end] = cost
+
+                prev2, prev1 = prev1, cur
+
+        # DP using two rolling arrays.
+        prev = [INF] * (n + 1)
+        prev[0] = 0
+
+        for groups in range(1, k + 1):
+            curr = [INF] * (n + 1)
+            min_start = (groups - 1) * 2
+
+            for end in range(groups * 2, n + 1):
+                best = INF
+
+                for start in range(min_start, end - 1):
+                    val = prev[start] + g[start][end]
+
+                    if val < best:
+                        best = val
+
+                curr[end] = best
+
+            prev = curr
+
+        return prev[n]
